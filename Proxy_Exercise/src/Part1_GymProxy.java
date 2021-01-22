@@ -8,19 +8,27 @@ public class Part1_GymProxy implements Part1_Gym {
 
     @Override
     public void workout() {
-        LocalDateTime now = LocalDateTime.now();
-        for(int i = 0; i < AllowedDays.length; i++) {
-            if (now.getDayOfWeek() == AllowedDays[i]) {
-                if (now.getHour() >= AllowedTimeRange[0] && now.getHour() <= AllowedTimeRange[1] ) {
-                    // gymObj = new Part1_GymImpl(); // Adding this line here would be lazy loading
-                    gymObj.workout();
-                }
-            }
+        if(checkForOpen()){
+            gymObj.workout();
         }
     }
 
     @Override
     public void liftCount() {
-        gymObj.liftCount();
+        if(checkForOpen()){
+            gymObj.liftCount();
+        }
+    }
+
+    public boolean checkForOpen(){
+        LocalDateTime now = LocalDateTime.now();
+        for(int i = 0; i < AllowedDays.length; i++) {
+            if (now.getDayOfWeek() == AllowedDays[i]) {
+                if (now.getHour() >= AllowedTimeRange[0] && now.getHour() <= AllowedTimeRange[1] ) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
