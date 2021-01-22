@@ -19,25 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="151ac732-fb1e-4351-b945-696ee1822d99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_Gym.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_GymImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_GymProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_Array2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_ConcreteArray2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_LazyArray2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1_Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Gym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1_GymImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/GymImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1_GymProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/GymProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2_Array2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Array2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2_ConcreteArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/ConcreteArray2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2_LazyArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/LazyArray2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="151ac732-fb1e-4351-b945-696ee1822d99" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
