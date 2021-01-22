@@ -3,5 +3,8 @@ public class Part1_Main {
         Part1_Gym gym = new Part1_GymProxy();
         gym.workout();
         gym.liftCount();
+        gym.workout();
+        gym.workout();
+        gym.liftCount();
     }
 }

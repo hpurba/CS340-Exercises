@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151ac732-fb1e-4351-b945-696ee1822d99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LazyArray2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1_Gym.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1_GymImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1_GymProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1_Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcreteArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcreteArray2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_GymImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1_GymImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_GymProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1_GymProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1_Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,21 +102,58 @@
     </state>
     <state x="1002" y="197" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1611273186552" />
     <state x="-667" y="264" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611265807865" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1611276980553">
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1611277601996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611276980553" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1611276980553">
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611277601996" />
+    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1611277601996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611276980553" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1611276980553">
+    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611277601996" />
+    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1611277601996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611276980553" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1611276980553">
+    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611277601996" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1611277601996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611276980553" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611277601996" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611277602340">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611277602340" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1611277602340">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1611277602340" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1611277602339">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1611277602339" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1611277602340">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1611277602340" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Part1_GymProxy.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Part1_GymProxy.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Part1_GymProxy.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
