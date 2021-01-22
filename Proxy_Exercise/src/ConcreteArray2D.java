@@ -1,7 +1,4 @@
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 
 public class ConcreteArray2D implements Array2D, Serializable {
   int[] data;
@@ -20,10 +17,12 @@ public class ConcreteArray2D implements Array2D, Serializable {
     os.writeObject(this);
   }
 
+  // TODO: THIS NEEDS TO BE FIXED!!!!
+  // I don't know how to fix the os.readObject()
   public static Array2D load(String filename) throws IOException, ClassNotFoundException {
-    FileOutputStream fs = new FileOutputStream(filename);
-    ObjectOutputStream os = new ObjectOutputStream(fs);
-    return (ConcreteArray2D)os.readObject();
+    FileInputStream fs = new FileInputStream(filename);
+    ObjectInputStream os = new ObjectInputStream(fs);
+    return (ConcreteArray2D) os.readObject();
   }
 
   @Override
