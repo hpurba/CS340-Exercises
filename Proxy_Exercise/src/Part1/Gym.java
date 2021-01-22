@@ -1,4 +1,6 @@
-public interface Part1_Gym {
+package Part1;
+
+public interface Gym {
     void workout();
     void liftCount();
 }

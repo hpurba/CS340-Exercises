@@ -21,17 +21,22 @@
   <component name="ChangeListManager">
     <list default="true" id="151ac732-fb1e-4351-b945-696ee1822d99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Array2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/ConcreteArray2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/LazyArray2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_GymProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_GymProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2_Array2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcreteArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2_ConcreteArray2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LazyArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2_LazyArray2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1_GymImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1_GymImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1_GymProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1_GymProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_Gym.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_GymImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_GymProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part1_Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_Array2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_ConcreteArray2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_LazyArray2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy_Exercise/Part2_Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Gym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_GymImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/GymImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_GymProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/GymProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part2_Array2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Array2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part2_ConcreteArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/ConcreteArray2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part2_LazyArray2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/LazyArray2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part2_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +71,23 @@
     <property name="project.structure.side.proportion" value="0.31034482" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.Part1_Main">
-    <configuration name="Part1_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part1_Main" />
+  <component name="RunManager" selected="Application.Part2_Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part1.Main" />
       <module name="Proxy_Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part2_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part2_Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part2.Main" />
+      <module name="Proxy_Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part1_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part1.Part1_Main" />
       <module name="Proxy_Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Part1_Main" />
         <item itemvalue="Application.Part2_Main" />
+        <item itemvalue="Application.Part1_Main" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +118,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -122,26 +136,31 @@
     </state>
     <state x="1002" y="197" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1611273186552" />
     <state x="-667" y="264" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611265807865" />
-    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611277972643">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="-1457" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611284445102">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1611277972643" />
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1611280368522">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="-1457" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284445102" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1611284682956">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
-    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1611280368522">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682956" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1611284682955">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
-    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1611280368522">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682955" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1611284682955">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
-    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1611280368522">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682955" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1611284682956">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682956" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611280368523">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

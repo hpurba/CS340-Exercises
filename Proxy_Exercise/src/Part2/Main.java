@@ -1,6 +1,8 @@
-public class Part2_Main {
+package Part2;
+
+public class Main {
     public static void main(String[] args) {
-        Part2_ConcreteArray2D array = new Part2_ConcreteArray2D(100, 100);
+        ConcreteArray2D array = new ConcreteArray2D(100, 100);
         array.set(12, 10, 50);
         System.out.println(array.get(12, 10));
 
@@ -11,7 +13,7 @@ public class Part2_Main {
         }
 
         try {
-            Part2_LazyArray2D arrayLazy = new Part2_LazyArray2D("Data");
+            LazyArray2D arrayLazy = new LazyArray2D("Data");
             System.out.println(arrayLazy.get(12, 10));
         } catch (Exception ex) {
             System.out.println(ex);

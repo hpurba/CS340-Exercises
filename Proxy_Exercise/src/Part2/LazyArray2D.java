@@ -1,10 +1,12 @@
+package Part2;
+
 import java.io.IOException;
 
-public class Part2_LazyArray2D implements Part2_Array2D {
-    Part2_Array2D subject = null;
+public class LazyArray2D implements Array2D {
+    Array2D subject = null;
     String filename;
 
-    public Part2_LazyArray2D(String filename) {
+    public LazyArray2D(String filename) {
         System.out.println("Creating Lazy Array Object");
         this.filename = filename;
     }
@@ -25,7 +27,7 @@ public class Part2_LazyArray2D implements Part2_Array2D {
         try {
             if (subject == null) {
                 System.out.println("Retrieve the Array Object.");
-                subject = new Part2_ConcreteArray2D(filename);
+                subject = new ConcreteArray2D(filename);
             }
         } catch (IOException ex) {
             System.out.println(ex);

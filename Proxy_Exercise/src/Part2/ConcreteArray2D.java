@@ -1,17 +1,19 @@
+package Part2;
+
 import java.io.*;
 
-public class Part2_ConcreteArray2D implements Part2_Array2D, Serializable {
+public class ConcreteArray2D implements Array2D, Serializable {
   int[][] data;
   int width;
   int height;
 
-  public Part2_ConcreteArray2D(int width, int height) {
+  public ConcreteArray2D(int width, int height) {
     this.width = width;
     this.height = height;
     this.data = new int[width][height];
   }
 
-  public Part2_ConcreteArray2D(String filename) throws IOException, ClassNotFoundException {
+  public ConcreteArray2D(String filename) throws IOException, ClassNotFoundException {
     this.data = load(filename);
   }
 

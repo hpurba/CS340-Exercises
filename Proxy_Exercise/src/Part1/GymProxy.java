@@ -1,10 +1,12 @@
+package Part1;
+
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 
-public class Part1_GymProxy implements Part1_Gym {
-    private Part1_Gym gymObj = new Part1_GymImpl();
+public class GymProxy implements Gym {
+    private Gym gymObj = new GymImpl();
     DayOfWeek[] AllowedDays = new DayOfWeek[]{ DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY, DayOfWeek.THURSDAY, DayOfWeek.FRIDAY};
-    int[] AllowedTimeRange = new int[]{7, 19};
+    int[] AllowedTimeRange = new int[]{5, 23};
 
     @Override
     public void workout() {
