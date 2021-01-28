@@ -1,0 +1,6 @@
+
+k	java:S116"VRename this field "AllowedDays" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø…ÌŸ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úù≤∆
+E
+java:S1066"/Merge this if statement with the enclosing one.(∫•™õ
+p	java:S116	"[Rename this field "AllowedTimeRange" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó›πû
