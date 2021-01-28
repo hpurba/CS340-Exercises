@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcb7d8ac-bcf6-458e-9e11-40119f9476a1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1nJsCe1IGeHnCyrUpz8Y3A2ioDV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.31034482" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcb7d8ac-bcf6-458e-9e11-40119f9476a1" name="Default Changelist" comment="" />
+      <created>1611119401235</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611119401235</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1384" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611124844601">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1384" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611124844601" />
+    <state x="1408" y="314" key="SettingsEditor" timestamp="1611125359962">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1408" y="314" key="SettingsEditor/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611125359962" />
+  </component>
+</project>

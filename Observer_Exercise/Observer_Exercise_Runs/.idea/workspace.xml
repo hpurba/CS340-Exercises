@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f21b929-bd3b-4295-9a49-a406ee1ae77a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nJotxSNG8k5ZPgVqsz3au1RoeT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31034482" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Jar" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FlightMonitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FlightMonitor" />
+      <module name="Observer_Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FlightMonitor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f21b929-bd3b-4295-9a49-a406ee1ae77a" name="Default Changelist" comment="" />
+      <created>1611117772781</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611117772781</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="430" y="347" key="#Project_Structure" timestamp="1611119363615">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="430" y="347" key="#Project_Structure/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611119363615" />
+    <state x="104" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611125294569">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="104" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611125294568" />
+    <state width="1238" height="408" key="GridCell.Tab.0.bottom" timestamp="1611287083661">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1238" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611287083661" />
+    <state width="1238" height="408" key="GridCell.Tab.0.center" timestamp="1611287083661">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1238" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611287083661" />
+    <state width="1238" height="408" key="GridCell.Tab.0.left" timestamp="1611287083661">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1238" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611287083661" />
+    <state width="1238" height="408" key="GridCell.Tab.0.right" timestamp="1611287083661">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1238" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611287083661" />
+    <state x="128" y="314" key="SettingsEditor" timestamp="1611120151728">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="128" y="314" key="SettingsEditor/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611120151728" />
+    <state x="113" y="336" key="new project wizard" timestamp="1611265577166">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="113" y="336" key="new project wizard/0.23.2560.1417/-1920.23.1920.1057@0.23.2560.1417" timestamp="1611265577166" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+
+p
+java:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(˙€“Â
+V	java:S125"<This block of commented-out lines of code should be removed.(â∆—ø¸ˇˇˇˇ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(∑‡ûÒ
+Q	java:S125?"<This block of commented-out lines of code should be removed.(∑‡ûÒ
+|
+java:S1488Î"`Immediately return this expression instead of assigning it to the temporary variable "respData".(£Ûõœ¸ˇˇˇˇ
+V	java:S125E"<This block of commented-out lines of code should be removed.(÷˝üÈ˝ˇˇˇˇ
+E
+java:S1066]"/Merge this if statement with the enclosing one.(á§»“
+g	java:S116"RRename this field "_flight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»∞÷Í
+a
+java:S21422"FEither re-interrupt this method or rethrow the "InterruptedException".( â¨Âˇˇˇˇˇ

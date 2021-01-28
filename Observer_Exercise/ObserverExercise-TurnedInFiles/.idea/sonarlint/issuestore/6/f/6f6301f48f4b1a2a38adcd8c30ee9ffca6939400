@@ -1,0 +1,9 @@
+
+S
+java:S1481"8Remove this unused "flightDeltaReporter" local variable.(ÙƒŸ¥ùÿÿÿÿ
+b
+java:S1854"GRemove this useless assignment to local variable "flightDeltaReporter".(ÙƒŸ¥ùÿÿÿÿ
+c
+java:S1854"HRemove this useless assignment to local variable "flightStatusReporter".(À¬©Îüÿÿÿÿ
+T
+java:S1481"9Remove this unused "flightStatusReporter" local variable.(À¬©Îüÿÿÿÿ
