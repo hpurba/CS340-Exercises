@@ -1,6 +1,8 @@
-public class Part1_Main {
+package Part1;
+
+public class Main {
     public static void main(String[] args) {
-        Part1_Gym gym = new Part1_GymProxy();
+        Gym gym = new GymProxy();
         gym.workout();
         gym.liftCount();
         gym.workout();

@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="151ac732-fb1e-4351-b945-696ee1822d99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="151ac732-fb1e-4351-b945-696ee1822d99" name="Default Changelist" comment="" />
+>>>>>>> 11a72c7c74f26621431d975480a00412fbf58193
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,16 +59,23 @@
     <property name="project.structure.side.proportion" value="0.31034482" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.Part1_Main">
-    <configuration name="Part1_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part1_Main" />
+  <component name="RunManager" selected="Application.Part2_Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part1.Main" />
       <module name="Proxy_Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part2_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part2_Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part2.Main" />
+      <module name="Proxy_Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part1_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part1.Part1_Main" />
       <module name="Proxy_Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,8 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Part1_Main" />
         <item itemvalue="Application.Part2_Main" />
+        <item itemvalue="Application.Part1_Main" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -112,10 +125,11 @@
     </state>
     <state x="1002" y="197" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1611273186552" />
     <state x="-667" y="264" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611265807865" />
-    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611277972643">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="-1457" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611284445102">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1611277972643" />
+<<<<<<< HEAD
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1611435845236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -133,6 +147,30 @@
     </state>
     <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611355472220" />
     <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1611355472220">
+=======
+    <state x="-1457" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284445102" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1611284682956">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682956" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1611284682955">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682955" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1611284682955">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682955" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1611284682956">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611280368522" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.2560.1417/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1611284682956" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611280368523">
+>>>>>>> 11a72c7c74f26621431d975480a00412fbf58193
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611355472220" />

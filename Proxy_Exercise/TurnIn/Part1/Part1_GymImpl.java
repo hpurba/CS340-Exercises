@@ -1,7 +1,9 @@
-public class Part1_GymImpl implements Part1_Gym {
+package Part1;
+
+public class GymImpl implements Gym {
     int numReps = 0;
 
-    public Part1_GymImpl() {
+    public GymImpl() {
         System.out.println("Welcome to the Gym!");
     }
 
