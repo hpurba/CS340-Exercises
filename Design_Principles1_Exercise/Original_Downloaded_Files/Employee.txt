@@ -1,0 +1,25 @@
+1. What design principles does this code violate?
+2. Refactor the code to improve its design.
+
+
+class Employee {
+    …
+    private Date employmentStartDate;
+    private Date employmentEndDate;
+}
+
+
+class RetirementCalculator {
+    private Employee employee;
+
+    public RetirementCalculator(Employee emp) {
+        this.employee = emp;
+    }
+
+    public float calculateRetirement(Date payPeriodStart, Date payPeriodEnd) { … }
+    
+    private int getTotalYearsOfService(Date startDate, Date endDate) { … }
+
+    private int getMonthsInLastPosition(Date startDate, Date endDate) { … }
+    ...  
+}
