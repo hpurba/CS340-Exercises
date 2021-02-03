@@ -1,20 +1,25 @@
 1. What design principles does this code violate?
-	High quality abstraction / Information Hiding. The retirement calculation should be a part of
-	the employee class. This also violates the information hiding principle.
-	There shouldn't be an obvious class called retirement calculator...
-
 2. Refactor the code to improve its design.
 
 
 class Employee {
-	private Date employmentStartDate;
-	private Date employmentEndDate;
-	private ......
+    …
+    private Date employmentStartDate;
+    private Date employmentEndDate;
+}
 
-	public float calculateRetirement(Date payPeriodStart, Date payPeriodEnd) { … }
 
+class RetirementCalculator {
+    private Employee employee;
+
+    public RetirementCalculator(Employee emp) {
+        this.employee = emp;
+    }
+
+    public float calculateRetirement(Date payPeriodStart, Date payPeriodEnd) { … }
+    
     private int getTotalYearsOfService(Date startDate, Date endDate) { … }
 
     private int getMonthsInLastPosition(Date startDate, Date endDate) { … }
-    ...
+    ...  
 }
