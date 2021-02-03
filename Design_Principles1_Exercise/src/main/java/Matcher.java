@@ -24,7 +24,7 @@ public class Matcher {
         }
         return true;
     }
-    
+
     // Check that each entry within expected +/- delta
     public boolean checkWithinDelta(int[] expected, int[] actual, int delta) {
         for (int i = 0; i < actual.length; i++){
