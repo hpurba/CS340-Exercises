@@ -1,0 +1,56 @@
+
+a
+java:S1854"?Remove this useless assignment to local variable "jennyJJones".(îÏ¹¨şÿÿÿÿ8•ä²ö.
+c
+java:S1192"FDefine a constant instead of duplicating this literal "Smith" 5 times.(÷õ¬¨8Şö‡³ö.
+a
+java:S1117"?Rename "jennyJJones" which hides the field declared at line 12.(îÏ¹¨şÿÿÿÿ8Şà‡³ö.
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(­í”à8öéó²ö.
+J
+java:S1481"-Remove this unused "bobSmith" local variable.(Êë±£8öéó²ö.
+R
+java:S1481"0Remove this unused "jennyJJones" local variable.(îÏ¹¨şÿÿÿÿ8öéó²ö.
+Y
+java:S1117"<Rename "bobSmith" which hides the field declared at line 11.(÷õ¬¨8´¡ğ²ö.
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‚ëô¡şÿÿÿÿ8öéó²ö.
+Y
+java:S1854"<Remove this useless assignment to local variable "bobSmith".(÷õ¬¨8•ä²ö.
+M
+java:S1481"0Remove this unused "jennyJJones" local variable.(Úµ’8öéó²ö.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íéï
+Y
+java:S1117'"<Rename "bobSmith" which hides the field declared at line 11.(÷õ¬¨8Şö‡³ö.
+a
+java:S11172"?Rename "jennyJJones" which hides the field declared at line 12.(îÏ¹¨şÿÿÿÿ8¥‹ˆ³ö.
+Y
+java:S1117;"<Rename "bobSmith" which hides the field declared at line 11.(÷õ¬¨8Ô¡ˆ³ö.
+Y
+java:S1117"<Rename "bobSmith" which hides the field declared at line 11.(÷õ¬¨8Şà‡³ö.
+]	java:S125
+"<This block of commented-out lines of code should be removed.(‹êÙÉÿÿÿÿÿ8ÒàÕ²ö.
+Y
+java:S1117"<Rename "bobSmith" which hides the field declared at line 11.(Êë±£8´¡ğ²ö.
+q
+java:S1192+"ODefine a constant instead of duplicating this literal "Jones, Jenny J" 3 times.(”‹îÏÿÿÿÿÿ8´¡ğ²ö.
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(­í”à8öéó²ö.
+h
+java:S1192"FDefine a constant instead of duplicating this literal "Jones" 5 times.(îÏ¹¨şÿÿÿÿ8Şö‡³ö.
+\
+java:S1117"?Rename "jennyJJones" which hides the field declared at line 12.(Úµ’8´¡ğ²ö.
+J
+java:S1481"-Remove this unused "bobSmith" local variable.(÷õ¬¨8öéó²ö.
+a
+java:S1117"?Rename "jennyJJones" which hides the field declared at line 12.(îÏ¹¨şÿÿÿÿ8´¡ğ²ö.
+a
+java:S1117<"?Rename "jennyJJones" which hides the field declared at line 12.(îÏ¹¨şÿÿÿÿ8Ô¡ˆ³ö.
+Y
+java:S11171"<Rename "bobSmith" which hides the field declared at line 11.(÷õ¬¨8¥‹ˆ³ö.
+m
+java:S1192*"KDefine a constant instead of duplicating this literal "Smith, Bob" 3 times.(Ê±×ùÿÿÿÿ8´¡ğ²ö.
+a
+java:S1117("?Rename "jennyJJones" which hides the field declared at line 12.(îÏ¹¨şÿÿÿÿ8Şö‡³ö.
+G
+java:S5960 "+Remove this assertion from production code.(ëï½K8öéó²ö.
+h
+java:S1192"FDefine a constant instead of duplicating this literal "Jenny" 5 times.(îÏ¹¨şÿÿÿÿ8Şö‡³ö.
