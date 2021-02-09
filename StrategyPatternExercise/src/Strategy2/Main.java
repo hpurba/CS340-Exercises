@@ -1,16 +1,14 @@
 package Strategy2;
 
-import java.nio.file.attribute.UserDefinedFileAttributeView;
-
 public class Main {
   public static void main(String[] args) {
-    EmailClient myConsoleApp = new ConsoleApplication();
+    EmailClient myConsoleApp = new EmailClient(new ConsolePrompt());
     myConsoleApp.promptLogin();
 
-    EmailClient myGraphicalApp = new GraphicalApplication();
+    EmailClient myGraphicalApp = new EmailClient(new GraphicalDisplay());
     myGraphicalApp.promptLogin();
 
-    EmailClient myOldStyleApp = new TraditionalApplication();
+    EmailClient myOldStyleApp = new EmailClient(new UserConfigurationFile());
     myOldStyleApp.promptLogin();
   }
 }

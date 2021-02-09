@@ -21,6 +21,6 @@ class GraphicalDisplay implements SendMessages {
 class UserConfigurationFile implements SendMessages {
   @Override
   public void validateMethod() {
-    System.out.println("Enter Configuration File\n (Pops up a file explore to select the file with credentials.)\n\n");
+    System.out.println("Enter Configuration File!\n (Pops up a file explore to select the file with credentials.)\n\n");
   }
 }

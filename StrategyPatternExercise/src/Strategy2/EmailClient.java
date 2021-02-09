@@ -1,5 +1,7 @@
 package Strategy2;
 
+import Strategy1.Validate;
+
 /**
  * 2. You want to create an email client class that can be used by programs to send email messages.
  * When an email message is sent, sometimes the user needs to provide a login name and password, and other times they do not.
@@ -14,6 +16,10 @@ public class EmailClient {
   private String password;
 
   public SendMessages sendMessageLoginType;
+
+  public EmailClient(SendMessages sendMessageLoginType){
+    this.sendMessageLoginType = sendMessageLoginType;
+  }
 
   public void promptLogin() {
     sendMessageLoginType.validateMethod();
