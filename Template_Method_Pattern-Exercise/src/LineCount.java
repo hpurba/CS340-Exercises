@@ -9,15 +9,6 @@ import java.util.*;
  */
 public class LineCount extends Template {
     @Override
-    public void performDeeperSearch(File file){
-        try {
-            basicFileSearch(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void performSpecificSearch(File file) throws IOException {
         ///////
         Reader reader = new BufferedReader(new FileReader(file));

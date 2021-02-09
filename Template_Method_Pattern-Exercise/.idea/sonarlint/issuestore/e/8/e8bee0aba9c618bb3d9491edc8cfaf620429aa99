@@ -1,0 +1,17 @@
+
+`
+java:S2095C"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Õõ¤ÿÿÿÿÿ
+m	java:S116"SRename this field "_recurse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‘ûÿÿÿÿ
+t	java:S116	"ZRename this field "_totalLineCount" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÊùëúÿÿÿÿ
+j
+java:S1192$"ODefine a constant instead of duplicating this literal " is unreadable" 3 times.(´¦—øÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(œœ™‡şÿÿÿÿ
+E
+java:S2093A"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+D
+java:S1481E")Remove this unused "line" local variable.(¶ñ˜úÿÿÿÿ
+m	java:S116
+"SRename this field "_matcher" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÑ€Ñøÿÿÿÿ
+h	java:S116"SRename this field "_pattern" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÜşí
+j	java:S116"URename this field "_directory" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îŸàï

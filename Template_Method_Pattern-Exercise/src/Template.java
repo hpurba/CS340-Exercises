@@ -51,8 +51,13 @@ public abstract class Template {
         }
     }
 
-    // This will get overridden in child class
-    public void performDeeperSearch(File file) {}
+    public void performDeeperSearch(File file) {
+        try {
+            basicFileSearch(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void basicFileSearch(File file) throws IOException {
         String fileName = getFileName(file);

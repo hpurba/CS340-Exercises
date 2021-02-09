@@ -1,0 +1,13 @@
+
+l	java:S116
+"WRename this field "_fileMatcher" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¼³¦
+n	java:S116"YRename this field "_searchMatcher" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åºøÏ
+m	java:S116	"SRename this field "_recurse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‘ûÿÿÿÿ
+C	java:S108A")Either remove or fill this block of code.(©œ¡ÿÿÿÿÿ
+m	java:S116"XRename this field "_totalMatches" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¸›—
+Z
+java:S2095K"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Æ¤´4
+E
+java:S2093J"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+m	java:S116"SRename this field "_dirName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†İùÿÿÿÿ
+l	java:S116"WRename this field "_filePattern" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºêøÖ

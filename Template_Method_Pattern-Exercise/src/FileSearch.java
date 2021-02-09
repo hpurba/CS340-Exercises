@@ -9,15 +9,6 @@ import java.util.*;
 
 public class FileSearch extends Template {
     @Override
-    public void performDeeperSearch(File file){
-        try {
-            basicFileSearch(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void performSpecificSearch(File file) throws IOException {
         int curMatches = 0;
         InputStream data = new BufferedInputStream(new FileInputStream(file));
@@ -40,7 +31,6 @@ public class FileSearch extends Template {
         }
         finally {
             data.close();
-
             if (curMatches > 0) {
                 System.out.println("MATCHES: " + curMatches);
             }
