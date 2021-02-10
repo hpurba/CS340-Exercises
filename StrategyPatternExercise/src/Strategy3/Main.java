@@ -2,7 +2,6 @@ package Strategy3;
 
 public class Main {
   public static void main(String[] args){
-    // Price of item is $100.00
     // PaymentType, SalesTax, ShippingPrice
     Order myFirstOrderCheap = new Order(new DebitCard(), new WesternStates(), new LessThan500MilesRate());
     myFirstOrderCheap.setPriceOfItemOrService(100.00);

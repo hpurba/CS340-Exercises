@@ -1,5 +1,20 @@
 package Strategy2;
 
+public class Main {
+  public static void main(String[] args) {
+    EmailClient myConsoleApp = new EmailClient(new ConsolePrompt());
+    myConsoleApp.promptLogin();
+
+    EmailClient myGraphicalApp = new EmailClient(new GraphicalDisplay());
+    myGraphicalApp.promptLogin();
+
+    EmailClient myOldStyleApp = new EmailClient(new UserConfigurationFile());
+    myOldStyleApp.promptLogin();
+  }
+}
+
+
+
 /**
  * 2. You want to create an email client class that can be used by programs to send email messages.
  * When an email message is sent, sometimes the user needs to provide a login name and password, and other times they do not.
@@ -21,5 +36,33 @@ public class EmailClient {
 
   public void promptLogin() {
     sendMessageLoginType.validateMethod();
+  }
+}
+
+
+
+
+public interface SendMessages {
+  void validateMethod();
+}
+
+class ConsolePrompt implements SendMessages {
+  @Override
+  public void validateMethod() {
+    System.out.println("Enter username and password in console!\n (Console pops up)");
+  }
+}
+
+class GraphicalDisplay implements SendMessages {
+  @Override
+  public void validateMethod() {
+    System.out.println("Enter Username and password in textboxes!\n (Graphical Interface pops up with boxes)");
+  }
+}
+
+class UserConfigurationFile implements SendMessages {
+  @Override
+  public void validateMethod() {
+    System.out.println("Enter Configuration File!\n (Pops up a file explore to select the file with credentials.)");
   }
 }

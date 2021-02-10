@@ -8,11 +8,11 @@ class ShortOnly implements Validate {
   @Override
   public String validateText(int numChars) {
     if(numChars < 11) {
-      System.out.println("Valid/n");
+      System.out.println("Valid");
       return "Valid";
     }
     else {
-      System.out.println("InValid/n");
+      System.out.println("InValid");
       return "invalid";
     }
   }
@@ -22,11 +22,11 @@ class LongOnly implements Validate {
   @Override
   public String validateText(int numChars) {
     if(numChars >= 11) {
-      System.out.println("Valid/n");
+      System.out.println("Valid");
       return "Valid";
     }
     else {
-      System.out.println("InValid/n");
+      System.out.println("InValid");
       return "invalid";
     }
   }
