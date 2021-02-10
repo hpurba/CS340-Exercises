@@ -7,20 +7,20 @@ public interface SendMessages {
 class ConsolePrompt implements SendMessages {
   @Override
   public void validateMethod() {
-    System.out.println("Enter username and password in console!\n (Console pops up)\n\n");
+    System.out.println("Enter username and password in console!\n (Console pops up)");
   }
 }
 
 class GraphicalDisplay implements SendMessages {
   @Override
   public void validateMethod() {
-    System.out.println("Enter Username and password in textboxes!\n (Graphical Interface pops up with boxes)\n\n");
+    System.out.println("Enter Username and password in textboxes!\n (Graphical Interface pops up with boxes)");
   }
 }
 
 class UserConfigurationFile implements SendMessages {
   @Override
   public void validateMethod() {
-    System.out.println("Enter Configuration File!\n (Pops up a file explore to select the file with credentials.)\n\n");
+    System.out.println("Enter Configuration File!\n (Pops up a file explore to select the file with credentials.)");
   }
 }

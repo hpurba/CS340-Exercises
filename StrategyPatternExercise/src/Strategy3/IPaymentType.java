@@ -1,11 +1,17 @@
 package Strategy3;
 
-//  String[] paymentType = {"credit card", "debit card", "PayPal"};
+// getPaymentTypePremium gets the additional fees associated with the payment type being used.
 public interface IPaymentType {
   public double getPaymentTypePremium();
 }
 
 class CreditCard implements IPaymentType {
+  public double getPaymentTypePremium() {
+    return 10.0;
+  }
+}
+
+class DebitCard implements IPaymentType {
   public double getPaymentTypePremium() {
     return 0.0;
   }
@@ -13,6 +19,6 @@ class CreditCard implements IPaymentType {
 
 class Paypal implements IPaymentType {
   public double getPaymentTypePremium() {
-    return 10.0;
+    return 5.0;
   }
 }

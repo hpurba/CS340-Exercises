@@ -1,49 +1,33 @@
 package Strategy3;
 
-import Strategy1.Validate;
-import Strategy2.SendMessages;
-
+/**
+ * 3. E-commerce applications need to process online customer orders. The basic process for processing an order is the
+ *    same for all applications, and includes steps like calculating sales tax, taking payment, and shipping the order.
+ *    However, each of these steps will be somewhat different for each application:
+ *  1. The algorithm for calculating sales tax will depend on the laws of the state and/or country in which the software is deployed
+ *  2. There are many different ways that a customer can pay: credit card, debit card, PayPal, etc.
+ *  3. There are many different shipping options: FedEx, US Postal Service, DHL, etc.
+ */
 public class Order {
-//  private double totalDue = 0.0;
-//  private double priceOfItemOrService = 100.00;
-//  private double salesTaxRate = 1.08; // 1.08 is the multiplier on the order price. 8% tax
-//
-//  String[] paymentType = {"credit card", "debit card", "PayPal"};
-  int paymentTypeSelected = 0;
-  private double paymentTypePremium = 0.0;
-
-  //
-//  String[] shippingOptions = {"FedEx", "US Postal Service", "DHL"};
-//  int shippingOptionSelected = 0;
-//  private double shippingPrice = 10.00;
-
+  private double totalDue = 0.0;
+  private double priceOfItemOrService = 0.0;
 
   IPaymentType paymentType;
+  ISalesTax salesTax;
+  IShippingPrice shippingPrice;
 
-  public Order(IPaymentType paymentType) { // }, ISalesTax salesTax, IShippingPrice shippingPrice){
-    this.paymentType = paymentType;
-//    this.paymentType = paymentType;
+  public void setPriceOfItemOrService(double priceOfItemOrService) {
+    this.priceOfItemOrService = priceOfItemOrService;
   }
 
-//  public SalesTax calculateSalesTax;
-//  public void setTaxRate() {
-//    calculateSalesTax.setTax();
-//  }
+  public Order(IPaymentType paymentType, ISalesTax salesTax, IShippingPrice shippingPrice){
+    this.paymentType = paymentType;
+    this.salesTax = salesTax;
+    this.shippingPrice = shippingPrice;
+  }
 
-
-  //  public PaymentType calculatePaymentType;
-//  public void setPaymentType() {
-//    calculatePaymentType.setPayment();
-//  }
-
-  //  public ShippingPrice calculateShippingPrice;
-//  public void setShippingPrice() {
-//    calculateShippingPrice.setShipping();
-//  }
-
-
-//  public double checkoutShoppingCart() {
-//    // totalDue = (priceOfItemOrService + shippingPrice) * salesTaxRate + this.paymentType.getPaymentTypePremium();
-//    return totalDue;
-//  }
+  public double checkoutShoppingCart() {
+    totalDue = (priceOfItemOrService + this.shippingPrice.getShippingRate()) * this.salesTax.getSalesTaxRate() + this.paymentType.getPaymentTypePremium();
+    return totalDue;
+  }
 }
