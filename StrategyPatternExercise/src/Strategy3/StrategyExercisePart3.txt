@@ -1,0 +1,116 @@
+package Strategy3;
+
+public class Main {
+  public static void main(String[] args){
+    // PaymentType, SalesTax, ShippingPrice
+    Order myFirstOrderCheap = new Order(new DebitCard(), new WesternStates(), new LessThan500MilesRate());
+    myFirstOrderCheap.setPriceOfItemOrService(100.00);
+    System.out.println("Order Price is: $" + myFirstOrderCheap.checkoutShoppingCart());
+
+    Order mySecondOrderExpensive = new Order(new CreditCard(), new EasternStates(), new MoreThan500MilesRate());
+    mySecondOrderExpensive.setPriceOfItemOrService(100.00);
+    System.out.println("Order Price is: $" + mySecondOrderExpensive.checkoutShoppingCart());
+  }
+}
+
+
+package Strategy3;
+
+/**
+ * 3. E-commerce applications need to process online customer orders. The basic process for processing an order is the
+ *    same for all applications, and includes steps like calculating sales tax, taking payment, and shipping the order.
+ *    However, each of these steps will be somewhat different for each application:
+ *  1. The algorithm for calculating sales tax will depend on the laws of the state and/or country in which the software is deployed
+ *  2. There are many different ways that a customer can pay: credit card, debit card, PayPal, etc.
+ *  3. There are many different shipping options: FedEx, US Postal Service, DHL, etc.
+ */
+public class Order {
+  private double totalDue = 0.0;
+  private double priceOfItemOrService = 0.0;
+
+  IPaymentType paymentType;
+  ISalesTax salesTax;
+  IShippingPrice shippingPrice;
+
+  public void setPriceOfItemOrService(double priceOfItemOrService) {
+    this.priceOfItemOrService = priceOfItemOrService;
+  }
+
+  public Order(IPaymentType paymentType, ISalesTax salesTax, IShippingPrice shippingPrice){
+    this.paymentType = paymentType;
+    this.salesTax = salesTax;
+    this.shippingPrice = shippingPrice;
+  }
+
+  public double checkoutShoppingCart() {
+    totalDue = (priceOfItemOrService + this.shippingPrice.getShippingRate()) * this.salesTax.getSalesTaxRate() + this.paymentType.getPaymentTypePremium();
+    return totalDue;
+  }
+}
+
+
+
+package Strategy3;
+
+// getPaymentTypePremium gets the additional fees associated with the payment type being used.
+public interface IPaymentType {
+  public double getPaymentTypePremium();
+}
+
+class CreditCard implements IPaymentType {
+  public double getPaymentTypePremium() {
+    return 10.0;
+  }
+}
+
+class DebitCard implements IPaymentType {
+  public double getPaymentTypePremium() {
+    return 0.0;
+  }
+}
+
+class Paypal implements IPaymentType {
+  public double getPaymentTypePremium() {
+    return 5.0;
+  }
+}
+
+
+package Strategy3;
+
+// getSalesTaxRate gets the taxRate as a percentage. ex. 1.08 being 8% tax.
+public interface ISalesTax {
+  public double getSalesTaxRate();
+}
+
+class EasternStates implements ISalesTax {
+  public double getSalesTaxRate() {
+    return 1.12;
+  }
+}
+
+class WesternStates implements ISalesTax {
+  public double getSalesTaxRate() {
+    return 1.08;
+  }
+}
+
+
+package Strategy3;
+
+// getShippingRate gets the additional shipping cost.
+public interface IShippingPrice {
+  public double getShippingRate();
+}
+
+class LessThan500MilesRate implements IShippingPrice {
+  public double getShippingRate() {
+    return 10.50;
+  }
+}
+
+class MoreThan500MilesRate implements IShippingPrice {
+  public double getShippingRate() {
+    return 21.00;
+  }
+}

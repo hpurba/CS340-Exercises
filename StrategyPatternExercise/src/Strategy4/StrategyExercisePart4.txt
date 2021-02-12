@@ -1,0 +1,82 @@
+package Strategy4;
+
+public class Main {
+  public static void main(String[] args){
+    AI myFirstAI = new AI(new OffensiveStrategy(), new DefensiveStrategy(), new IdleStrategy());
+    System.out.println("Let the games begin against this amazing AI. Fight!");
+    myFirstAI.fight();
+
+    System.out.println("End of Game.\nGame Restarted! Fight!");
+    myFirstAI.fight();
+    myFirstAI.fight();
+    System.out.println("AI has lost!");
+  }
+}
+
+
+
+package Strategy4;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class AI {
+  // List of strategies that the AI can use
+  public List<IStrategy> strategiesList = new ArrayList<>();
+
+  public AI(IStrategy strategy1, IStrategy strategy2, IStrategy strategy3) {
+    this.strategiesList.add(strategy1);
+    this.strategiesList.add(strategy2);
+    this.strategiesList.add(strategy3);
+  }
+
+  public void addStrategy(IStrategy strategy){
+    this.strategiesList.add(strategy);
+  }
+
+  public void fight() {
+    int i = 0;
+    Random randNum = new Random();
+    while (i++ < 4) {
+      strategiesList.get(randNum.nextInt(strategiesList.size())).fight();
+    }
+  }
+}
+
+
+
+
+
+package Strategy4;
+
+import Strategy1.Validate;
+
+public interface IStrategy {
+  public void fight();
+}
+
+class DefensiveStrategy implements IStrategy {
+  @Override
+  public void fight() {
+    System.out.println("Using Shield");
+    System.out.println("Did a block");
+  }
+}
+
+class OffensiveStrategy implements IStrategy {
+  @Override
+  public void fight() {
+    System.out.println("Using Sword");
+    System.out.println("Slashed Opponent in Two!");
+  }
+}
+
+class IdleStrategy implements IStrategy {
+  @Override
+  public void fight() {
+    System.out.println("Eating a delicious sandwich and look at self in mirror.");
+    System.out.println("Checking Robinhood accound balance.");
+    System.out.println("Cashed out on GME at $354 a share!");
+  }
+}

@@ -1,0 +1,116 @@
+//  1. What design principles does this code violate?
+//      Isolated Change Principle. "Avoid shotgun surgery". Also should depend on abstraction more.
+//  2. Refactor the code to improve its design.
+
+// Person.java
+abstract class Person {
+  public String last;
+  public String first;
+  public String middle;
+
+  public Person(String last, String first, String middle) {
+    this.last = last;
+    this.first = first;
+    this.middle = middle;
+  }
+}
+
+// PersonClient.java
+public class PersonClient extends Person {
+
+  public PersonClient(String last, String first, String middle) {super(last, first, middle);}
+
+  public String client1() throws IOException {
+    StringBuilder str = new StringBuilder(this.first + " ");
+    if (this.middle != null) {
+      str.append(this.middle + " ");
+    }
+    str.append(this.last);
+    return str.toString();
+  }
+
+  public String client2() {
+    StringBuilder str = new StringBuilder(this.last + " " + this.first);
+    if (this.middle != null){
+      str.append(" " + this.middle);
+    }
+    return str.toString();
+  }
+
+  public String client3() throws IOException {
+    StringBuilder str = new StringBuilder(this.last + ", " + this.first);
+    if (this.middle != null) {
+      str.append(" " + this.middle);
+    }
+    return str.toString();
+  }
+
+  public String client4() {
+    StringBuilder str = new StringBuilder(this.last + ", " + this.first);
+    if (this.middle == null) {
+      str.append("");
+    }
+    else {
+      str.append(" " + this.middle);
+    }
+    return str.toString();
+  }
+}
+
+// PersonClientTest.java
+public class PersonClientTest {// extends TestCase {
+  PersonClient bobSmith;
+  PersonClient jennyJJones;
+
+  @BeforeEach
+  public void setUp() throws Exception {
+    PersonClient bobSmith = new PersonClient("Smith", "Bob", null);
+    PersonClient jennyJJones = new PersonClient("Jones", "Jenny", "J");
+  }
+
+  @AfterEach
+  public void cleanUp() throws Exception {
+    PersonClient bobSmith = null;
+    PersonClient jennyJJones = null;
+  }
+
+  // Client 1
+  @Test
+  public void testClient1() throws IOException {
+    PersonClient bobSmith = new PersonClient("Smith", "Bob", null);
+    PersonClient jennyJJones = new PersonClient("Jones", "Jenny", "J");
+
+    assertEquals("Bob Smith", bobSmith.client1());
+    assertEquals("Jenny J Jones", jennyJJones.client1());
+  }
+
+  // Client 2
+  @Test
+  public void testClient2() throws IOException {
+    PersonClient bobSmith = new PersonClient("Smith", "Bob", null);
+    PersonClient jennyJJones = new PersonClient("Jones", "Jenny", "J");
+
+    assertEquals("Smith, Bob", bobSmith.client2());
+    assertEquals("Jones, Jenny J", jennyJJones.client2());
+  }
+
+  // Client 3
+  @Test
+  public void testClient3() throws IOException {
+    PersonClient bobSmith = new PersonClient("Smith", "Bob", null);
+    PersonClient jennyJJones = new PersonClient("Jones", "Jenny", "J");
+
+    assertEquals("Smith, Bob", bobSmith.client3());
+    assertEquals("Jones, Jenny J", jennyJJones.client3());
+  }
+
+  // Client 4
+  @Test
+  public void testClient4() throws IOException {
+    PersonClient bobSmith = new PersonClient("Smith", "Bob", null);
+    PersonClient jennyJJones = new PersonClient("Jones", "Jenny", "J");
+
+    assertEquals("Smith, Bob", bobSmith.client4());
+    assertEquals("Jones, Jenny J", jennyJJones.client4());
+  }
+}
