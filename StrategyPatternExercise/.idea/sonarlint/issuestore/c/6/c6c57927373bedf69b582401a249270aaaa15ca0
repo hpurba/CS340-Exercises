@@ -1,0 +1,8 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ë±åãüÿÿÿÿ8‰¥†Æø.
+t
+java:S1104"XMake validityType a static final constant or non-public and provide accessors if needed.(¸Ô¢n8¯ÈÜÅø.
+p
+java:S1450	"SRemove the "text" field and declare it as a local variable in the relevant methods.(š²ûÁ8Š€§Æø.
+E
+java:S1068	"(Remove this unused "text" private field.(š²ûÁ8Š€§Æø.
