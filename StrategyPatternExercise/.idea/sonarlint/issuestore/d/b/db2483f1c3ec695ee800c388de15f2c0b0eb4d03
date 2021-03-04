@@ -1,0 +1,8 @@
+
+‚
+java:S1104"`Make sendMessageLoginType a static final constant or non-public and provide accessors if needed.(ãŸı‘üÿÿÿÿ8œ‡Çø.
+O
+java:S1068"-Remove this unused "loginName" private field.(É¦Ì•şÿÿÿÿ8Ï¡ÛÆø.
+N
+java:S1068",Remove this unused "password" private field.(œãë­úÿÿÿÿ8’¾ÛÆø.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú½ÿ

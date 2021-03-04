@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "2021-02-23T22:43:40Z",
+    "title": "API_Gateway_Exercise"
+  },
+  "host": "k7fi4j4vla.execute-api.us-west-2.amazonaws.com",
+  "basePath": "/dev",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/sendemail": {
+      "post": {
+        "description": "This method called sendemail will send a simple email.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/EmailResult"
+            }
+          }
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            },
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Empty": {
+      "type": "object",
+      "title": "Empty Schema"
+    },
+    "EmailResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Operation status message"
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Operation timestamp"
+        }
+      },
+      "title": "EmailResult"
+    }
+  }
+}
