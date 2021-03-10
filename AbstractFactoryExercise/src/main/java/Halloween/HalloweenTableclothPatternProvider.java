@@ -1,3 +1,5 @@
+package Halloween;
+
 public class HalloweenTableclothPatternProvider implements iHalloweenTableclothPatternProvider {
 
     public String getTablecloth() {

@@ -1,3 +1,5 @@
+package Halloween;
+
 public class HalloweenWallHangingProvider implements iHalloweenWallHangingProvider {
 
     public String getHanging() {

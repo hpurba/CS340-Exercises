@@ -1,3 +1,5 @@
+package Halloween;
+
 public class HalloweenYardOrnamentProvider implements iHalloweenYardOrnamentProvider {
 
     public String getOrnament() {

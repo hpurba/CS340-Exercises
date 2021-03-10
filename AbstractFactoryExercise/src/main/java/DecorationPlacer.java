@@ -1,18 +1,17 @@
-public class DecorationPlacer {
-
-    // FIXME use dependency inversion to remove these hard-coded dependencies
-    private iHalloweenTableclothPatternProvider tableclothPattern = new HalloweenTableclothPatternProvider();
-    private iHalloweenWallHangingProvider wallHanging = new HalloweenWallHangingProvider();
-    private iHalloweenYardOrnamentProvider yardOrnament = new HalloweenYardOrnamentProvider();
+public class DecorationPlacer implements iDecorationPlacer {
 
     public DecorationPlacer() {
 
     }
 
-    public String placeDecorations() {
-        return "Everything was ready for the party. The " + yardOrnament.toString()
-                + " was in front of the house, the " + wallHanging.toString()
-                + " was hanging on the wall, and the tablecloth with " + tableclothPattern.toString()
-                + " was spread over the table.";
+    public void placeDecorations(String Holiday) {
+        System.out.println("You selected: " + Holiday);
+        if (Holiday.equals("H")) {
+            iHolidayFactory holidayDecorationFactory = new HalloweenFactory();
+            System.out.println(holidayDecorationFactory.placeDecorations());
+        } else {
+            iHolidayFactory holidayDecorationFactory = new ChristmasFactory();
+            System.out.println(holidayDecorationFactory.placeDecorations());
+        }
     }
 }

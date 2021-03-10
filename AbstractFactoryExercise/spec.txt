@@ -1,0 +1,51 @@
+Complete the exercise in java and submit your code here.
+
+Holiday Decorations
+The code provided for this exercise has a small and simple program that creates a string detailing the preparations for a holiday party. Unfortunately, it is hard-coded for Halloween decorations. The only thing that needs to change to make the code work for a different holiday is to change the decoration providers, but we don't want to replace the already working Halloween decoration providers. We'd like to instead break the hard-coded dependency and use dependency inversion to pass our program providers for any holiday we want.
+
+Working Project
+Start by creating a new project (in Intellij or another IDE of your choice), copying the provided code into the 'src' directory, and making sure the provided main class runs. You should see output like the following:
+
+Everything was ready for the party. The jack-o-lantern was in front of the house, the spider-web was hanging on the wall, and the tablecloth with ghosts and skeletons was spread over the table.
+
+Now that you have a working program, you will improve it by applying dependency inversion and the Abstract Factory pattern.
+
+Dependency Inversion
+First, implement dependency inversion like you did with the SpellingChecker example. You should have an interface for each of the decoration providers, and the DecorationPlacer should depend only on those interfaces, not on the Halloween implementations. Make sure your program still works as it did before.
+
+Abstract Factory
+Dependency Inversion is great, but now, if we want to have our DecorationPlacer do Christmas or Easter decorations, we have to configure all three of the providers each time. If I'm using a Christmas wall hanging, I know already that I want a Christmas yard ornament and a Christmas tablecloth pattern, so passing all three providers into the DecorationPlacer separately seems redundant.
+
+Implement the Abstract Factory Pattern so that the DecorationPlacer only takes a factory interface as a parameter in its constructor. You will need to create a Halloween factory implementation of the factory interface. Be sure the program still works as it did before.
+
+Extendibility
+Now, our program can be easily extended to decorate for more holidays. Implement providers and a factory for another holiday of your choice. Instantiate a DecorationPlacer with your new factory in the main method and look at its output to see that your new factory works.
+
+Submission
+Submit the following files through Canvas as individual files (NOT A ZIP FILE):
+
+modified Main
+modified DecorationPlacer
+The three provider interfaces
+The factory interface
+modified Halloween providers
+Halloween provider factory
+Your three additional providers
+Your additional provider factory
+Rubric
+In Class Exercises Rubric
+In Class Exercises Rubric
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomeExercise Correctness
+This is a general reflection of how well you did on the exercise.
+2 pts
+Full Marks
+Is mostly right, possibly some small errors.
+1 pts
+Some credit
+May have bigger errors, or parts incomplete or missing.
+0 pts
+No Marks
+Did not complete the assignment, did not follow instructions or had exceedingly many errors.
+2 pts
+Total Points: 2
