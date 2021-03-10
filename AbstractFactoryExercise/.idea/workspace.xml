@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0105ebf5-313e-48d6-9c02-63a387ff14f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/CS340-Exercises.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/Dependency_Inversion_Exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchContentByURL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionaryByFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/SpellingChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/5/f/5ff47959ba8f5fb0a8eb375ab17727e0096c1064" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/5/f/5ff47959ba8f5fb0a8eb375ab17727e0096c1064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/8/7/874885789d781c2d254eed13fd648744fea37075" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/8/7/874885789d781c2d254eed13fd648744fea37075" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/e/3/e36d1e122ca8b0d97a5789fe6dec35450e175acb" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/e/3/e36d1e122ca8b0d97a5789fe6dec35450e175acb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellcheck/Dictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellcheck/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellcheck/SpellingChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellcheck/URLFetcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellcheck/WordExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/Dictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/SpellingChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/URLFetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/WordExtractor.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pYLUSDaPpKuW8YpYiyCppmqfLP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.31034482" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AbstractFactoryExercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0105ebf5-313e-48d6-9c02-63a387ff14f0" name="Default Changelist" comment="" />
+      <created>1615355092240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615355092240</updated>
+    </task>
+    <servers />
+  </component>
+</project>
