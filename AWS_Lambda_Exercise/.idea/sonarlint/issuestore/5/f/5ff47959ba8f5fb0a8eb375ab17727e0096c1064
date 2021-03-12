@@ -1,18 +1,18 @@
 
-p
-java:S1104"NMake TO a static final constant or non-public and provide accessors if needed.(ú¦·Òüÿÿÿÿ8¡†‹Äû.
 q
 java:S1104"TMake TEXTBODY a static final constant or non-public and provide accessors if needed.(¤Ìè¬8ŸªŒÄû.
+n	java:S116"MRename this field "TO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¦·Òüÿÿÿÿ8¡†‹Äû.
+s	java:S116
+"RRename this field "SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Ãºèýÿÿÿÿ8ŸªŒÄû.
+o	java:S116"SRename this field "HTMLBODY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÇ´ø8ŸªŒÄû.
 u
 java:S1104
 "SMake SUBJECT a static final constant or non-public and provide accessors if needed.(¡Ãºèýÿÿÿÿ8ŸªŒÄû.
-q
-java:S1104"TMake HTMLBODY a static final constant or non-public and provide accessors if needed.(æÇ´ø8ŸªŒÄû.
-s	java:S116
-"RRename this field "SUBJECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Ãºèýÿÿÿÿ8ŸªŒÄû.
+o	java:S116"SRename this field "TEXTBODY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ìè¬8ŸªŒÄû.
 m
 java:S1104	"PMake FROM a static final constant or non-public and provide accessors if needed.(±ÍŸÅ8¡†‹Äû.
+q
+java:S1104"TMake HTMLBODY a static final constant or non-public and provide accessors if needed.(æÇ´ø8ŸªŒÄû.
+p
+java:S1104"NMake TO a static final constant or non-public and provide accessors if needed.(ú¦·Òüÿÿÿÿ8¡†‹Äû.
 k	java:S116	"ORename this field "FROM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÍŸÅ8¡†‹Äû.
-o	java:S116"SRename this field "TEXTBODY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ìè¬8ŸªŒÄû.
-o	java:S116"SRename this field "HTMLBODY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÇ´ø8ŸªŒÄû.
-n	java:S116"MRename this field "TO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¦·Òüÿÿÿÿ8¡†‹Äû.

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="248e07cb-4633-45fd-bbf1-5175895f9323" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/database/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Budget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Expense.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Income.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/expense/ExpensePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/expense/IExpensePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/income/IIncomePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/income/IncomePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/main/IMainPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/main/MainPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/new_budget/INewBudgetPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/new_budget/NewBudgetPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/update_budget/IUpdateBudgetPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/presenter/update_budget/UpdateBudgetPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/IView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/Navigator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/expense/ExpenseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/expense/IExpenseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/factory/IViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/factory/ViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/income/IIncomeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/income/IncomeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/main/IMainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/main/MainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/new_budget/INewBudgetView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/new_budget/NewBudgetView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/update_budget/IUpdateBudgetView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/update_budget/UpdateBudgetView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/5/f/5ff47959ba8f5fb0a8eb375ab17727e0096c1064" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/5/f/5ff47959ba8f5fb0a8eb375ab17727e0096c1064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/8/7/874885789d781c2d254eed13fd648744fea37075" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/8/7/874885789d781c2d254eed13fd648744fea37075" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/e/3/e36d1e122ca8b0d97a5789fe6dec35450e175acb" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_Lambda_Exercise/.idea/sonarlint/issuestore/e/3/e36d1e122ca8b0d97a5789fe6dec35450e175acb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactoryExercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactoryExercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/Dependency_Inversion_Exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/Dependency_Inversion_Exercise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchContentByURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchContentByURL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionaryByFileName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionaryByFileName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/SpellingChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/src/main/java/spellchecker/SpellingChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/Dictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/SpellingChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/URLFetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dependency_Inversion_Exercise/target/classes/spellcheck/WordExtractor.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pdppHpcKLI1wqFMOZhe8vcQOor" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.31034482" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="DAO_Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="248e07cb-4633-45fd-bbf1-5175895f9323" name="Default Changelist" comment="" />
+      <created>1615523002588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615523002588</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom" timestamp="1615523234514">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615523234514" />
+    <state width="2518" height="408" key="GridCell.Tab.0.center" timestamp="1615523234513">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615523234513" />
+    <state width="2518" height="408" key="GridCell.Tab.0.left" timestamp="1615523234512">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615523234512" />
+    <state width="2518" height="408" key="GridCell.Tab.0.right" timestamp="1615523234514">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615523234514" />
+  </component>
+</project>

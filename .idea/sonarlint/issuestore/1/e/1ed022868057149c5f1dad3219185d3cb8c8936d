@@ -1,0 +1,19 @@
+
+
+java:S4165"iRemove this useless assignment; "filePattern" already holds the assigned value along all execution paths.(‘„­Ÿ
+J
+java:S1656"/Remove or correct this useless self-assignment.(¦¹Úíþÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "dirName".(¦¹Úíþÿÿÿÿ
+h	java:S116	"SRename this field "_recurse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÅœ©
+o	java:S116
+"ZRename this field "_totalLineCount" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÞ´¢
+l	java:S116"WRename this field "_fileMatcher" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í‡ìå
+r	java:S116"XRename this field "_totalMatches" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åü‡ñÿÿÿÿÿ
+E
+java:S1656"/Remove or correct this useless self-assignment.(‘„­Ÿ
+€
+java:S4165"eRemove this useless assignment; "dirName" already holds the assigned value along all execution paths.(¦¹Úíþÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
+s	java:S116"YRename this field "_searchMatcher" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÁ®¹ÿÿÿÿÿ

@@ -1,0 +1,19 @@
+
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+b
+2Template_Method_Pattern-Exercise/src/Template.java,1/e/1ed022868057149c5f1dad3219185d3cb8c8936d
+c
+3Template_Method_Pattern-Exercise/src/LineCount.java,0/9/0967d42191085df026957232104434afbc698272
+z
+JDependency_Inversion_Exercise/src/main/java/spellchecker/FetchContent.java,e/0/e081310a7e43ec56c671f8912b181c4f88d9224d
+
+ODependency_Inversion_Exercise/src/main/java/spellchecker/FetchContentByURL.java,4/e/4ef340919565130f344950a7421d879fe2f70486
+}
+MDependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionary.java,e/f/efe9893c2556246a09d0ae05d0d8fdbb4ff51be8
+‡
+WDependency_Inversion_Exercise/src/main/java/spellchecker/FetchDictionaryByFileName.java,2/e/2e8986f9fe60460cd3a2d42962160b871b152ea6
+r
+BDependency_Inversion_Exercise/src/main/java/spellchecker/Main.java,0/9/09c67efcc79229566f783b4536db2b0648a51b5a
+}
+MDependency_Inversion_Exercise/src/main/java/spellchecker/SpellingChecker.java,9/8/98351269e43ed6ea79280b518babc9948dffa6f0
