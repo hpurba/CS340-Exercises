@@ -55,16 +55,22 @@ public class Main {
       // Check to see if it is already in the addedPartitionKeysList
       // Two of the same follower_handle cannot be added into DynamoDB
       boolean alreadyInList = false;
-      for(int k = 0; k < addedPartitionKeysList.size(); k++){
-        if(addedPartitionKeysList.get(k) == listOfHandleNames.get(follower)) {
+//      for(int k = 0; k < addedPartitionKeysList.size(); k++){
+//        if(addedPartitionKeysList.get(k) == listOfHandleNames.get(follower)) {
+//          alreadyInList = true;
+//        }
+//      }
+      for(int k = 0; k < addedPartitionKeysList.size(); k++) {
+        if (addedPartitionKeysList.get(k) == (listOfHandleNames.get(follower) + listOfHandleNames.get(followee))) {
           alreadyInList = true;
         }
       }
 
-      // If not already in the list, add it.
+
+        // If not already in the list, add it.
       if(!alreadyInList) {
         testCases[i] = new Entry(listOfHandleNames.get(follower), listOfHandleNames.get(followee), listOfNames.get(followee), listOfNames.get(follower));
-        addedPartitionKeysList.add(listOfHandleNames.get(follower));
+        addedPartitionKeysList.add(listOfHandleNames.get(follower) + listOfHandleNames.get(followee));
         i++;
       }
     }
@@ -97,8 +103,9 @@ public class Main {
 
 
       //“Delete” one of the items in the “follows” table using its primary key
-
-
+      int randomUserToDelete = rand.nextInt(TOTAL_ITEMS);
+      System.out.println("Attempting a DELETE on DynamoDB for: " + testCases[randomUserToDelete].toString());
+      followsDAO.delete(testCases[randomUserToDelete]);
     }
     catch (Exception e) {
       e.printStackTrace();

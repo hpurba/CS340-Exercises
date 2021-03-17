@@ -1,6 +1,7 @@
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.*;
+import com.amazonaws.services.dynamodbv2.document.spec.DeleteItemSpec;
 import com.amazonaws.services.dynamodbv2.document.spec.GetItemSpec;
 import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec;
 import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
@@ -90,6 +91,21 @@ public class FollowsDAO {
     }
     catch (Exception e) {
       System.err.println("Unable to update item.");
+      System.err.println(e.getMessage());
+    }
+  }
+
+  public void delete(Entry entryToDelete) {
+    DeleteItemSpec deleteItemSpec = new DeleteItemSpec()
+      .withPrimaryKey(PartitionKey, entryToDelete.follower_handle, IndexName, entryToDelete.followee_handle);
+
+    try {
+      System.out.println("Attempting a conditional delete...");
+      table.deleteItem(deleteItemSpec);
+      System.out.println("DeleteItem succeeded");
+    }
+    catch (Exception e) {
+      System.err.println("Unable to delete item.");
       System.err.println(e.getMessage());
     }
   }
