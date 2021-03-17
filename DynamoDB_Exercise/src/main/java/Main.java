@@ -78,14 +78,16 @@ public class Main {
       for(int i = 0; i < testCases.length; i++){
         followsDAO.put(testCases[i]);
         System.out.println("Inserting [" + (i + 1) + "]: " + testCases[i].toString());
-//        TimeUnit.SECONDS.sleep(1);
-        // TODO: Some puts get skipped.
       }
-//      // PUT Single Item
-//      for(int i = 0; i < 1; i++){
-//        followsDAO.put(testCases[i]);
-//      }
 
+      // “GET” one of the items from the “follows” table using its primary key
+      int randomUser = rand.nextInt(TOTAL_NUM_USERS);
+      System.out.println("Attempting a GET on DynamoDB for: " + testCases[randomUser].toString());
+      followsDAO.get(testCases[randomUser]);
+
+
+      //“Update” the “follower_name” and “followee_name” attributes of one of the items in the “follows” table
+      //“Delete” one of the items in the “follows” table using its primary key
 
 
       // UPDATE?

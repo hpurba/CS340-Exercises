@@ -5,6 +5,7 @@ import com.amazonaws.services.dynamodbv2.document.DynamoDB;
 import com.amazonaws.services.dynamodbv2.document.Item;
 import com.amazonaws.services.dynamodbv2.document.PutItemOutcome;
 import com.amazonaws.services.dynamodbv2.document.Table;
+import com.amazonaws.services.dynamodbv2.document.spec.GetItemSpec;
 
 public class FollowsDAO {
   private static final String TableName = "follows";
@@ -21,7 +22,7 @@ public class FollowsDAO {
     .build();
   private static DynamoDB dynamoDB = new DynamoDB(amazonDynamoDB);
 //
-//  private Table table = dynamoDB.getTable(TableName);
+  private static Table table = dynamoDB.getTable(TableName);
 
 //  private static boolean isNonEmptyString(String value) {
 //    return (value != null && value.length() > 0);
@@ -32,7 +33,7 @@ public class FollowsDAO {
 
   public void put(Entry entry) {
 
-    Table table = dynamoDB.getTable(TableName);
+//    Table table = dynamoDB.getTable(TableName);
 
     // Item to add / put
     Item item = new Item()
@@ -53,15 +54,21 @@ public class FollowsDAO {
     }
   }
 
+  public void get(Entry entry) {
 
+    GetItemSpec spec = new GetItemSpec().withPrimaryKey(PartitionKey, entry.follower_handle, IndexName, entry.followee_handle);
 
+    try {
+      System.out.println("Attempting to read the item...");
+      Item outcome = table.getItem(spec);
+      System.out.println("GetItem succeeded: " + outcome);
 
-
-
-
-
-
-
+    }
+    catch (Exception e) {
+      System.err.println("Unable to read item: " + entry.follower_handle + " " + entry.followee_handle);
+      System.err.println(e.getMessage());
+    }
+  }
 
 
 //
