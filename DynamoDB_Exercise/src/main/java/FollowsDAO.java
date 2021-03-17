@@ -1,11 +1,13 @@
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
-//import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDB;
-import com.amazonaws.services.dynamodbv2.document.DynamoDB;
-import com.amazonaws.services.dynamodbv2.document.Item;
-import com.amazonaws.services.dynamodbv2.document.PutItemOutcome;
-import com.amazonaws.services.dynamodbv2.document.Table;
+import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.document.spec.GetItemSpec;
+import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec;
+import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
+import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
+import com.amazonaws.services.dynamodbv2.model.ReturnValue;
+
+import java.util.Arrays;
 
 public class FollowsDAO {
   private static final String TableName = "follows";
@@ -66,6 +68,28 @@ public class FollowsDAO {
     }
     catch (Exception e) {
       System.err.println("Unable to read item: " + entry.follower_handle + " " + entry.followee_handle);
+      System.err.println(e.getMessage());
+    }
+  }
+
+  public void update(Entry originalEntry, Entry newEntry) {
+
+
+    UpdateItemSpec updateItemSpec = new UpdateItemSpec()
+      .withPrimaryKey(PartitionKey, originalEntry.follower_handle, IndexName, originalEntry.followee_handle)
+      .withUpdateExpression("set followee_name =:fen, follower_name=:frn")
+      .withValueMap(new ValueMap()
+        .withString(":fen", newEntry.followee_name)
+        .withString(":frn", newEntry.follower_name))
+      .withReturnValues(ReturnValue.UPDATED_NEW);
+
+    try {
+      System.out.println("Updating the item...");
+      UpdateItemOutcome outcome = table.updateItem(updateItemSpec);
+      System.out.println("UpdateItem succeeded:\n" + outcome.getItem().toJSONPretty());
+    }
+    catch (Exception e) {
+      System.err.println("Unable to update item.");
       System.err.println(e.getMessage());
     }
   }

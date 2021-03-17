@@ -81,96 +81,27 @@ public class Main {
       }
 
       // “GET” one of the items from the “follows” table using its primary key
-      int randomUser = rand.nextInt(TOTAL_NUM_USERS);
+      int randomUser = rand.nextInt(TOTAL_ITEMS);
       System.out.println("Attempting a GET on DynamoDB for: " + testCases[randomUser].toString());
       followsDAO.get(testCases[randomUser]);
 
 
       //“Update” the “follower_name” and “followee_name” attributes of one of the items in the “follows” table
+      int randomUserToUpdate = rand.nextInt(TOTAL_ITEMS);
+      Entry originalEntry = testCases[randomUserToUpdate];
+      Entry newEntry = new Entry(testCases[randomUserToUpdate].follower_handle, testCases[randomUserToUpdate].followee_handle, testCases[randomUserToUpdate].followee_name, "Mr.THE_RICH_KING");
+      System.out.println("Attempting an UPDATE on DynamoDB for: " + originalEntry.toString());
+      System.out.println("Changing to: " + newEntry.toString());
+      followsDAO.update(originalEntry, newEntry);
+
+
+
       //“Delete” one of the items in the “follows” table using its primary key
 
 
-      // UPDATE?
-//      for (Entry tc : testCases) {
-//        for (int i = 0; i < tc.follower_name; ++i) {
-//          followsDAO.recordVisit(tc.follower_handle, tc.followee_handle);
-//        }
-//      }
-
-//      // TODO: GET
-//      for (Entry tc : testCases) {
-//        for (int i = 0; i < tc.follower_name; ++i) {
-//          String message = String.format("%s visited %s %d times", tc.follower_handle, tc.followee_handle, tc.follower_name);
-//          verify(followsDAO.getVisitCount(tc.follower_handle, tc.followee_handle) == tc.follower_name, message);
-//        }
-//      }
-//
-//      testGetVisitedLocations(followsDAO, 1);
-//      testGetVisitedLocations(followsDAO, 2);
-//      testGetVisitedLocations(followsDAO, 3);
-//      testGetVisitedLocations(followsDAO, 10);
-//
-//      testGetVisitors(followsDAO, 1);
-//      testGetVisitors(followsDAO, 2);
-//      testGetVisitors(followsDAO, 3);
-//      testGetVisitors(followsDAO, 10);
-//
-//      for (Entry tc : testCases) {
-//        for (int i = 0; i < tc.follower_name; ++i) {
-//          followsDAO.deleteVisit(tc.follower_handle, tc.followee_handle);
-//        }
-//      }
-//
-//      for (Entry tc : testCases) {
-//        for (int i = 0; i < tc.follower_name; ++i) {
-//          String message = String.format("Deleted visits of %s to %s", tc.follower_handle, tc.followee_handle);
-//          verify(followsDAO.getVisitCount(tc.follower_handle, tc.followee_handle) == 0, message);
-//        }
-//      }
     }
     catch (Exception e) {
       e.printStackTrace();
     }
   }
-
-
-//  TODO: REMOVE, THESE ARE TESTS, but the code could be useful.
-//
-//  private static void testGetVisitedLocations(FollowsDAO followsDAO, int pageSize) {
-//
-//    Set<String> bettysLocations = new HashSet<>();
-//
-//    ResultsPage results = null;
-//    while (results == null || results.hasLastKey()) {
-//      String lastLocation = ((results != null) ? results.getLastKey() : null);
-//      results = followsDAO.getVisitedLocations("Betty", pageSize, lastLocation);
-//      bettysLocations.addAll(results.getValues());
-//    }
-//
-//    verify(bettysLocations.size() == 3, "Betty visited three locations");
-//    verify(bettysLocations.contains("New York"), "Betty visited New York");
-//    verify(bettysLocations.contains("Atlanta"), "Betty visited Atlanta");
-//    verify(bettysLocations.contains("Boston"), "Betty visited Boston");
-//  }
-//
-//  private static void testGetVisitors(FollowsDAO followsDAO, int pageSize) {
-//    Set<String> newYorksVisitors = new HashSet<>();
-//
-//    ResultsPage results = null;
-//    while (results == null || results.hasLastKey()) {
-//      String lastVisitor = ((results != null) ? results.getLastKey() : null);
-//      results = followsDAO.getVisitors("New York", pageSize, lastVisitor);
-//      newYorksVisitors.addAll(results.getValues());
-//    }
-//
-//    verify(newYorksVisitors.size() == 2, "New York has two visitors");
-//    verify(newYorksVisitors.contains("Fred"), "Fred visited New York");
-//    verify(newYorksVisitors.contains("Betty"), "Betty visited New York");
-//  }
-//
-//  private static void verify(boolean b, String message) {
-//    if (!b) {
-//      throw new IllegalStateException(message);
-//    }
-//  }
 }
