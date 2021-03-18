@@ -1,0 +1,13 @@
+
+]	java:S125'"<This block of commented-out lines of code should be removed.(ãÁµ…ÿÿÿÿÿ8Ç„¯øƒ/
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÌÜıøƒ/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™„ú×ùÿÿÿÿ8ßëšõƒ/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÏŒ£Çıÿÿÿÿ8Ôà•õƒ/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬ÑµÊùÿÿÿÿ8é™İóƒ/
+]	java:S125"<This block of commented-out lines of code should be removed.(•œİ†üÿÿÿÿ8ö§âõƒ/
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(çô®©8é™İóƒ/
+]	java:S125z"<This block of commented-out lines of code should be removed.(Õ±‘Ğùÿÿÿÿ8ÕõÁøƒ/
+w
+java:S1128"URemove this unused import 'com.amazonaws.services.dynamodbv2.document.utils.NameMap'.(İœ©øÿÿÿÿ8Î‹ùƒ/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ŞøŞùÿÿÿÿ8©é—õƒ/

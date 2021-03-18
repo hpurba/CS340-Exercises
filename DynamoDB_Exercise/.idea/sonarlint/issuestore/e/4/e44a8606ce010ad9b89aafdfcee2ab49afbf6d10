@@ -1,0 +1,9 @@
+
+V
+java:S4973@"9Use the "equals" method if value comparison was intended.(Ø–òÖ8·Õùƒ/
+X	java:S125:"<This block of commented-out lines of code should be removed.(œûì×8ÕËÜùƒ/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ıßÑşÿÿÿÿ8œığõƒ/
+t	java:S127J"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8šçí÷ƒ/
+r	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§£Ï–øÿÿÿÿ8œığõƒ/
+W
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8£ªœøƒ/

@@ -6,9 +6,15 @@ import com.amazonaws.services.dynamodbv2.document.spec.GetItemSpec;
 import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec;
 import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
+import com.amazonaws.services.dynamodbv2.model.QueryRequest;
+import com.amazonaws.services.dynamodbv2.model.QueryResult;
 import com.amazonaws.services.dynamodbv2.model.ReturnValue;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class FollowsDAO {
   private static final String TableName = "follows";
@@ -24,20 +30,14 @@ public class FollowsDAO {
     .withRegion("us-west-2")
     .build();
   private static DynamoDB dynamoDB = new DynamoDB(amazonDynamoDB);
-//
+
   private static Table table = dynamoDB.getTable(TableName);
 
-//  private static boolean isNonEmptyString(String value) {
-//    return (value != null && value.length() > 0);
-//  }
-
-
-
-
+  /**
+   * Add and entry into the Table
+   * @param entry
+   */
   public void put(Entry entry) {
-
-//    Table table = dynamoDB.getTable(TableName);
-
     // Item to add / put
     Item item = new Item()
       .withPrimaryKey(PartitionKey, entry.follower_handle)
@@ -57,6 +57,11 @@ public class FollowsDAO {
     }
   }
 
+  /**
+   * Get an Entry from the table
+   *
+   * @param entry
+   */
   public void get(Entry entry) {
 
     GetItemSpec spec = new GetItemSpec().withPrimaryKey(PartitionKey, entry.follower_handle, IndexName, entry.followee_handle);
@@ -73,9 +78,13 @@ public class FollowsDAO {
     }
   }
 
+  /**
+   * Update an entry with a new Entry
+   * @param originalEntry
+   * @param newEntry
+   */
   public void update(Entry originalEntry, Entry newEntry) {
-
-
+    // UpdateItemSpecification
     UpdateItemSpec updateItemSpec = new UpdateItemSpec()
       .withPrimaryKey(PartitionKey, originalEntry.follower_handle, IndexName, originalEntry.followee_handle)
       .withUpdateExpression("set followee_name =:fen, follower_name=:frn")
@@ -83,7 +92,7 @@ public class FollowsDAO {
         .withString(":fen", newEntry.followee_name)
         .withString(":frn", newEntry.follower_name))
       .withReturnValues(ReturnValue.UPDATED_NEW);
-
+    // Attempt an update
     try {
       System.out.println("Updating the item...");
       UpdateItemOutcome outcome = table.updateItem(updateItemSpec);
@@ -95,10 +104,16 @@ public class FollowsDAO {
     }
   }
 
+  /**
+   * Delete a given Entry
+   *
+   * @param entryToDelete
+   */
   public void delete(Entry entryToDelete) {
+    // Item to Delete Specification
     DeleteItemSpec deleteItemSpec = new DeleteItemSpec()
       .withPrimaryKey(PartitionKey, entryToDelete.follower_handle, IndexName, entryToDelete.followee_handle);
-
+    // Delete Attempt
     try {
       System.out.println("Attempting a conditional delete...");
       table.deleteItem(deleteItemSpec);
@@ -110,167 +125,60 @@ public class FollowsDAO {
     }
   }
 
+  /**
+   * Fetch the next page of followee_handle by follower_handle
+   * “Query” the “follows” table to return all of the users being followed by a user, sortedby “followee_handle”
+   * Hint: Call QuerySpec.withScanIndexForward(true) to sort the result in ascending order
+   *
+   * @param followerHandle The follower of interest
+   * @param pageSize The maximum number of followees to include in the result
+   * @param lastFollowee Sorted by followee_handle
+   * @return The next page of locations visited by visitor
+   */
+  public ResultsPage getFolloweeHandleOfFollower(String followerHandle, int pageSize, String lastFollowee) {
+    ResultsPage result = new ResultsPage();
+    Map<String, String> attrNames = new HashMap<String, String>();
+    attrNames.put("#follower_handle", PartitionKey);
+    Map<String, AttributeValue> attrValues = new HashMap<String, AttributeValue>();
+    attrValues.put(":follower", new AttributeValue().withS(followerHandle));
 
-//
-//  /**
-//   * Retrieve the number of times visitor has visited location
-//   *
-//   * @param visitor
-//   * @param location
-//   * @return
-//   */
-//  public int getVisitCount(String visitor, String location) {
-//    Table table = dynamoDB.getTable(TableName);
-//
-//    Item item = table.getItem(FolloweeNameAtr, visitor, FollowerNameAtr, location);
-//    if (item == null) {
-//      return 0;
-//    }
-//    else {
-//      return item.getInt(VisitCountAttr);
-//    }
-//  }
-//
-//  /**
-//   * Increment the number of times visitor has visited location
-//   *
-//   * @param visitor
-//   * @param location
-//   */
-//  public void recordVisit(String visitor, String location) {
-//    Table table = dynamoDB.getTable(TableName);
-//
-//    try {
-//      // Increment the visit count.
-//      // If visitor has never visited location, this will throw an exception.
-//
-//      Map<String, String> attrNames = new HashMap<String, String>();
-//      attrNames.put("#viscnt", VisitCountAttr);
-//
-//      Map<String, Object> attrValues = new HashMap<String, Object>();
-//      attrValues.put(":val", 1);
-//
-//      table.updateItem(FolloweeNameAtr, visitor, FollowerNameAtr, location,
-//        "set #viscnt = #viscnt + :val", attrNames, attrValues);
-//    }
-//    catch (Exception e) {
-//      // Record first visit of visitor to location
-//
-//      Item item = new Item()
-//        .withPrimaryKey(FolloweeNameAtr, visitor, FollowerNameAtr, location)
-//        .withNumber(VisitCountAttr, 1);
-//
-//      table.putItem(item);
-//    }
-//  }
-//
-//  /**
-//   * Delete all visits of visitor to location
-//   *
-//   * @param visitor
-//   * @param location
-//   */
-//  public void deleteVisit(String visitor, String location) {
-//    Table table = dynamoDB.getTable(TableName);
-//    table.deleteItem(FolloweeNameAtr, visitor, FollowerNameAtr, location);
-//  }
-//
-//  /**
-//   * Fetch the next page of locations visited by visitor
-//   *
-//   * @param visitor The visitor of interest
-//   * @param pageSize The maximum number of locations to include in the result
-//   * @param lastLocation The last location returned in the previous page of results
-//   * @return The next page of locations visited by visitor
-//   */
-//  public ResultsPage getVisitedLocations(String visitor, int pageSize, String lastLocation) {
-//    ResultsPage result = new ResultsPage();
-//
-//    Map<String, String> attrNames = new HashMap<String, String>();
-//    attrNames.put("#vis", FolloweeNameAtr);
-//
-//    Map<String, AttributeValue> attrValues = new HashMap<>();
-//    attrValues.put(":visitor", new AttributeValue().withS(visitor));
-//
-//    QueryRequest queryRequest = new QueryRequest()
-//      .withTableName(TableName)
-//      .withKeyConditionExpression("#vis = :visitor")
-//      .withExpressionAttributeNames(attrNames)
-//      .withExpressionAttributeValues(attrValues)
-//      .withLimit(pageSize);
-//
-//    if (isNonEmptyString(lastLocation)) {
-//      Map<String, AttributeValue> startKey = new HashMap<>();
-//      startKey.put(FolloweeNameAtr, new AttributeValue().withS(visitor));
-//      startKey.put(FollowerNameAtr, new AttributeValue().withS(lastLocation));
-//
-//      queryRequest = queryRequest.withExclusiveStartKey(startKey);
-//    }
-//
-//    QueryResult queryResult = amazonDynamoDB.query(queryRequest);
-//    List<Map<String, AttributeValue>> items = queryResult.getItems();
-//    if (items != null) {
-//      for (Map<String, AttributeValue> item : items){
-//        String location = item.get(FollowerNameAtr).getS();
-//        result.addValue(location);
-//      }
-//    }
-//
-//    Map<String, AttributeValue> lastKey = queryResult.getLastEvaluatedKey();
-//    if (lastKey != null) {
-//      result.setLastKey(lastKey.get(FollowerNameAtr).getS());
-//    }
-//
-//    return result;
-//  }
-//
-//  /**
-//   * Fetch the next page of visitors who have visited location
-//   *
-//   * @param location The location of interest
-//   * @param pageSize The maximum number of visitors to include in the result
-//   * @param lastVisitor The last visitor returned in the previous page of results
-//   * @return The next page of visitors who have visited location
-//   */
-//  public ResultsPage getVisitors(String location, int pageSize, String lastVisitor) {
-//    ResultsPage result = new ResultsPage();
-//
-//    Map<String, String> attrNames = new HashMap<String, String>();
-//    attrNames.put("#loc", FollowerNameAtr);
-//
-//    Map<String, AttributeValue> attrValues = new HashMap<>();
-//    attrValues.put(":location", new AttributeValue().withS(location));
-//
-//    QueryRequest queryRequest = new QueryRequest()
-//      .withTableName(TableName)
-//      .withIndexName(IndexName)
-//      .withKeyConditionExpression("#loc = :location")
-//      .withExpressionAttributeNames(attrNames)
-//      .withExpressionAttributeValues(attrValues)
-//      .withLimit(pageSize);
-//
-//    if (isNonEmptyString(lastVisitor)) {
-//      Map<String, AttributeValue> lastKey = new HashMap<>();
-//      lastKey.put(FollowerNameAtr, new AttributeValue().withS(location));
-//      lastKey.put(FolloweeNameAtr, new AttributeValue().withS(lastVisitor));
-//
-//      queryRequest = queryRequest.withExclusiveStartKey(lastKey);
-//    }
-//
-//    QueryResult queryResult = amazonDynamoDB.query(queryRequest);
-//    List<Map<String, AttributeValue>> items = queryResult.getItems();
-//    if (items != null) {
-//      for (Map<String, AttributeValue> item : items){
-//        String visitor = item.get(FolloweeNameAtr).getS();
-//        result.addValue(visitor);
-//      }
-//    }
-//
-//    Map<String, AttributeValue> lastKey = queryResult.getLastEvaluatedKey();
-//    if (lastKey != null) {
-//      result.setLastKey(lastKey.get(FolloweeNameAtr).getS());
-//    }
-//
-//    return result;
-//  }
+    // Query Request
+    QueryRequest queryRequest = new QueryRequest()
+      .withTableName(TableName)
+      .withKeyConditionExpression("#follower_handle = :follower")
+      .withExpressionAttributeNames(attrNames)
+      .withExpressionAttributeValues(attrValues)
+      .withLimit(pageSize)
+      .withScanIndexForward(true);
+
+    if (isNonEmptyString(lastFollowee)) {
+      Map<String, AttributeValue> startKey = new HashMap<>();
+      startKey.put(PartitionKey, new AttributeValue().withS(followerHandle));
+      startKey.put(IndexName, new AttributeValue().withS(lastFollowee));
+      queryRequest = queryRequest.withExclusiveStartKey(startKey);
+    }
+    QueryResult queryResult = amazonDynamoDB.query(queryRequest);
+    List<Map<String, AttributeValue>> items = queryResult.getItems();
+    if (items != null) {
+      for (Map<String, AttributeValue> item : items){
+        String location = item.get(IndexName).getS();
+        result.addValue(location);
+      }
+    }
+    Map<String, AttributeValue> lastKey = queryResult.getLastEvaluatedKey();
+    if (lastKey != null) {
+      result.setLastKey(lastKey.get(IndexName).getS());
+    }
+    return result;
+  }
+
+
+
+
+  //
+
+
+  private static boolean isNonEmptyString(String value) {
+    return (value != null && value.length() > 0);
+  }
 }

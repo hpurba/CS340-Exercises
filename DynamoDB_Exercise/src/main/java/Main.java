@@ -6,7 +6,7 @@ public class Main {
   public static void main(String[] args) {
 
     int TOTAL_ITEMS = 100;
-    int TOTAL_NUM_USERS = 150;
+    int TOTAL_NUM_USERS = 40; // 150;
     int numOfEntries = 0;
 
     List<String> addedPartitionKeysList = new ArrayList<String>();
@@ -33,6 +33,7 @@ public class Main {
     }
 
     while(numOfEntries <= TOTAL_NUM_USERS){
+
       for(int i = 0; i < lowestSizeOfCombinedList; i++){
         String name;
         name = fName.get(i) + lName.get(i);
@@ -65,8 +66,6 @@ public class Main {
           alreadyInList = true;
         }
       }
-
-
         // If not already in the list, add it.
       if(!alreadyInList) {
         testCases[i] = new Entry(listOfHandleNames.get(follower), listOfHandleNames.get(followee), listOfNames.get(followee), listOfNames.get(follower));
@@ -75,16 +74,15 @@ public class Main {
       }
     }
 
-
-
     try {
       FollowsDAO followsDAO = new FollowsDAO();
 
       // PUT ALL 100 items
-      for(int i = 0; i < testCases.length; i++){
+      for (int i = 0; i < testCases.length; i++) {
         followsDAO.put(testCases[i]);
         System.out.println("Inserting [" + (i + 1) + "]: " + testCases[i].toString());
       }
+
 
       // “GET” one of the items from the “follows” table using its primary key
       int randomUser = rand.nextInt(TOTAL_ITEMS);
@@ -101,14 +99,53 @@ public class Main {
       followsDAO.update(originalEntry, newEntry);
 
 
-
       //“Delete” one of the items in the “follows” table using its primary key
       int randomUserToDelete = rand.nextInt(TOTAL_ITEMS);
       System.out.println("Attempting a DELETE on DynamoDB for: " + testCases[randomUserToDelete].toString());
       followsDAO.delete(testCases[randomUserToDelete]);
+
+
+      // TEST QUERY FOLLOWS TABLE
+      Set<String> followeesQueryByFollowerHandle = new HashSet<>();
+      ResultsPage results = null;
+      // String queryFollowerHandle = "@AshleyMoore"; // Useful for a specific follower_handle Query
+      String queryFollowerHandle = testCases[randomUser].follower_handle;
+      while (results == null || results.hasLastKey()) {
+        String lastFollowee = ((results != null) ? results.getLastKey() : null);
+        results = followsDAO.getFolloweeHandleOfFollower(queryFollowerHandle, 10, lastFollowee);
+        followeesQueryByFollowerHandle.addAll(results.getValues());
+      }
+      System.out.println("Followees Query By Follower Handle (" + queryFollowerHandle + ") Size: " + followeesQueryByFollowerHandle.size());
+      for(String aFollowee : followeesQueryByFollowerHandle) {
+        System.out.println(aFollowee + " is followed by " + queryFollowerHandle + ".");
+      }
+      // Useful if I already know what is in the database.
+      // verify(followeesQueryByFollowerHandle.size() == 3, queryFollowerHandle + " follows 3 people");
+      // verify(followeesQueryByFollowerHandle.contains("@AnthonyWalker"), "@AnthonyWalker is followed by " + queryFollowerHandle);
+      // verify(followeesQueryByFollowerHandle.contains("@AshleyTaylor"), "@AshleyTaylor is followed by " + queryFollowerHandle);
+      // verify(followeesQueryByFollowerHandle.contains("@DanielLewis"), "@DanielLewis is followed by " + queryFollowerHandle);
+
+
+      //TEST QUERY follows_index TABLE
+
+
+
+
+
+
     }
     catch (Exception e) {
       e.printStackTrace();
+    }
+  }
+
+  // Similar to assertion
+  private static void verify(boolean b, String message) {
+    if (!b) {
+      throw new IllegalStateException(message);
+    }
+    else {
+      System.out.println("Success! " + message + ".");
     }
   }
 }
