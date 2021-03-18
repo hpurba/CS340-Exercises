@@ -3,6 +3,7 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.document.spec.DeleteItemSpec;
 import com.amazonaws.services.dynamodbv2.document.spec.GetItemSpec;
+import com.amazonaws.services.dynamodbv2.document.spec.QuerySpec;
 import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec;
 import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
@@ -11,10 +12,7 @@ import com.amazonaws.services.dynamodbv2.model.QueryRequest;
 import com.amazonaws.services.dynamodbv2.model.QueryResult;
 import com.amazonaws.services.dynamodbv2.model.ReturnValue;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class FollowsDAO {
   private static final String TableName = "follows";
@@ -175,7 +173,51 @@ public class FollowsDAO {
 
 
 
-  //
+  // Find followers of user given followee_handle
+  // AWS Link to exampleQueryIndex
+  public ResultsPage queryIndex(String followee_handle, int pageSize, String lastFollower) {
+    ResultsPage result = new ResultsPage();
+
+    Map<String, String> attrNames = new HashMap<String, String>();
+    attrNames.put("#flweHndl", FolloweeNameAtr);
+
+    Map<String, AttributeValue> attrValues = new HashMap<>();
+    attrValues.put(":followee_handle", new AttributeValue().withS(followee_handle));
+
+    QueryRequest queryRequest = new QueryRequest()
+      .withTableName(TableName)
+      .withIndexName(IndexName)
+      .withKeyConditionExpression("#flweHndl = :followee_handle")
+      .withExpressionAttributeNames(attrNames)
+      .withExpressionAttributeValues(attrValues)
+      .withLimit(pageSize)
+      .withScanIndexForward(false);;
+
+    if (isNonEmptyString(lastFollower)) {
+      Map<String, AttributeValue> lastKey = new HashMap<>();
+      lastKey.put(FolloweeNameAtr, new AttributeValue().withS(followee_handle));
+      lastKey.put(FollowerNameAtr, new AttributeValue().withS(lastFollower));
+
+      queryRequest = queryRequest.withExclusiveStartKey(lastKey);
+    }
+
+    QueryResult queryResult = amazonDynamoDB.query(queryRequest);
+    List<Map<String, AttributeValue>> items = queryResult.getItems();
+    if (items != null) {
+      for (Map<String, AttributeValue> item : items){
+        String visitor = item.get(FollowerNameAtr).getS();
+        result.addValue(visitor);
+      }
+    }
+
+    Map<String, AttributeValue> lastKey = queryResult.getLastEvaluatedKey();
+    if (lastKey != null) {
+      result.setLastKey(lastKey.get(FollowerNameAtr).getS());
+    }
+
+    return result;
+  }
+
 
 
   private static boolean isNonEmptyString(String value) {

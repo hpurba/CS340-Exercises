@@ -14,6 +14,7 @@ public class Main {
     // Generate Random Names
     List<String> listOfNames = new ArrayList<String>();
     List<String> listOfHandleNames = new ArrayList<String>();
+
     List<String> fName = Arrays.asList("James", "John", "Robert", "Michael", "William", "David", "Richard", "Joseph",
       "Thomas", "Charles", "Christopher", "Daniel", "Matthew", "Anthony", "Mary", "Patricia", "Jennifer", "Linda",
       "Elizabeth", "Barbara", "Susan", "Jessica", "Sarah", "Karen", "Nancy", "Lisa", "Margaret", "Betty", "Sandra", "Ashley");
@@ -24,7 +25,7 @@ public class Main {
       "Walker", "Perez", "Hall");
     Collections.shuffle(lName);
 
-    // Total combinations made
+    // Get the smallest List size between fName and lName
     int lowestSizeOfCombinedList = 0;
     if(fName.size() > lName.size()) {
       lowestSizeOfCombinedList = lName.size();
@@ -33,14 +34,23 @@ public class Main {
     }
 
     while(numOfEntries <= TOTAL_NUM_USERS){
-
       for(int i = 0; i < lowestSizeOfCombinedList; i++){
         String name;
         name = fName.get(i) + lName.get(i);
         String handleName = "@" + name;
-        listOfNames.add(name);
-        listOfHandleNames.add(handleName);
-        numOfEntries = numOfEntries + 1;
+
+        // if the name/handle combination is already in the listOfHandleNames don't add
+        boolean addName = true;
+        for (String existingName : listOfNames) {
+          if (existingName == name) {
+            addName = false;
+          }
+        }
+        if(addName) {
+          listOfNames.add(name);
+          listOfHandleNames.add(handleName);
+          numOfEntries = numOfEntries + 1;
+        }
       }
       Collections.shuffle(fName);
       Collections.shuffle(lName);
@@ -53,20 +63,22 @@ public class Main {
       int follower = rand.nextInt(TOTAL_NUM_USERS);
       int followee = rand.nextInt(TOTAL_NUM_USERS);
 
+      // Guarantees that the follower and followee are not the same person.
+      // If they are the same, generate a new followee.
+      while(follower == followee){
+        followee = rand.nextInt(TOTAL_NUM_USERS);
+      }
+
+
       // Check to see if it is already in the addedPartitionKeysList
-      // Two of the same follower_handle cannot be added into DynamoDB
+      // Two of the same follower_handle and followee_handle combinations cannot be added into DynamoDB
       boolean alreadyInList = false;
-//      for(int k = 0; k < addedPartitionKeysList.size(); k++){
-//        if(addedPartitionKeysList.get(k) == listOfHandleNames.get(follower)) {
-//          alreadyInList = true;
-//        }
-//      }
       for(int k = 0; k < addedPartitionKeysList.size(); k++) {
         if (addedPartitionKeysList.get(k) == (listOfHandleNames.get(follower) + listOfHandleNames.get(followee))) {
           alreadyInList = true;
         }
       }
-        // If not already in the list, add it.
+      // If not already in the list, add it.
       if(!alreadyInList) {
         testCases[i] = new Entry(listOfHandleNames.get(follower), listOfHandleNames.get(followee), listOfNames.get(followee), listOfNames.get(follower));
         addedPartitionKeysList.add(listOfHandleNames.get(follower) + listOfHandleNames.get(followee));
@@ -127,10 +139,21 @@ public class Main {
 
 
       //TEST QUERY follows_index TABLE
-
-
-
-
+      System.out.println("Finding Followers for: " + testCases[randomUser].followee_handle);
+      // TEST QUERY FOLLOWS TABLE
+      Set<String> followersQueryByFolloweeHandle = new HashSet<>();
+      ResultsPage results2 = null;
+      // String queryFollowerHandle = "@AshleyMoore"; // Useful for a specific follower_handle Query
+      String queryFolloweeHandle = testCases[randomUser].followee_handle;
+      while (results2 == null || results2.hasLastKey()) {
+        String lastFollower = ((results2 != null) ? results.getLastKey() : null);
+        results2 = followsDAO.queryIndex(testCases[randomUser].followee_handle, 10, lastFollower);
+        followersQueryByFolloweeHandle.addAll(results2.getValues());
+      }
+      System.out.println("Followers Query By Followee Handle (" + queryFolloweeHandle + ") Size: " + followersQueryByFolloweeHandle.size());
+      for(String aFollower : followersQueryByFolloweeHandle) {
+        System.out.println(aFollower + " follows " + queryFolloweeHandle + ".");
+      }
 
 
     }
