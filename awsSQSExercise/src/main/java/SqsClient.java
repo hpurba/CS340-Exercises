@@ -6,7 +6,6 @@ import com.amazonaws.services.sqs.model.SendMessageResult;
 
 public class SqsClient {
   public static void main(String[] args) {
-
     String messageBody = "*** PUT YOUR MESSAGE BODY HERE ***";
     String queueUrl = "https://sqs.us-west-2.amazonaws.com/198501887002/SQSExerciseQueue";
 
