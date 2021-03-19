@@ -179,19 +179,19 @@ public class FollowsDAO {
     ResultsPage result = new ResultsPage();
 
     Map<String, String> attrNames = new HashMap<String, String>();
-    attrNames.put("#flweHndl", FolloweeNameAtr);
+    attrNames.put("#flweHndl", IndexName);
 
     Map<String, AttributeValue> attrValues = new HashMap<>();
     attrValues.put(":followee_handle", new AttributeValue().withS(followee_handle));
 
     QueryRequest queryRequest = new QueryRequest()
       .withTableName(TableName)
-      .withIndexName(IndexName)
+      .withIndexName("follows_index")
       .withKeyConditionExpression("#flweHndl = :followee_handle")
       .withExpressionAttributeNames(attrNames)
       .withExpressionAttributeValues(attrValues)
       .withLimit(pageSize)
-      .withScanIndexForward(false);;
+      .withScanIndexForward(false);
 
     if (isNonEmptyString(lastFollower)) {
       Map<String, AttributeValue> lastKey = new HashMap<>();

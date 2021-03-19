@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.amazonaws:aws-lambda-java-events:2.2.5" type="repository">
+    <properties maven-id="com.amazonaws:aws-lambda-java-events:2.2.5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-lambda-java-events/2.2.5/aws-lambda-java-events-2.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.6/joda-time-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,17 +1,17 @@
 
-\
-java:S1192"FDefine a constant instead of duplicating this literal "Betty" 5 times.(›ß…±
 _
 java:S1192
 "IDefine a constant instead of duplicating this literal "New York" 4 times.(¾§“±
-P
-java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–ðÿ
-f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–ðÿ
-f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–ðÿ
-n
-java:S1104n"SMake visitor a static final constant or non-public and provide accessors if needed.(Œ¤¯éøÿÿÿÿ
 o
 java:S1104o"TMake location a static final constant or non-public and provide accessors if needed.(û³Þ¿þÿÿÿÿ
+f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–ðÿ
+P
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+n
+java:S1104n"SMake visitor a static final constant or non-public and provide accessors if needed.(Œ¤¯éøÿÿÿÿ
+f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–ðÿ
 k
 java:S1104p"VMake visitCount a static final constant or non-public and provide accessors if needed.(ê¾“$
+f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–ðÿ
+\
+java:S1192"FDefine a constant instead of duplicating this literal "Betty" 5 times.(›ß…±

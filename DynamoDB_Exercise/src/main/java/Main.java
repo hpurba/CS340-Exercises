@@ -124,7 +124,7 @@ public class Main {
       String queryFollowerHandle = testCases[randomUser].follower_handle;
       while (results == null || results.hasLastKey()) {
         String lastFollowee = ((results != null) ? results.getLastKey() : null);
-        results = followsDAO.getFolloweeHandleOfFollower(queryFollowerHandle, 10, lastFollowee);
+        results = followsDAO.getFolloweeHandleOfFollower(queryFollowerHandle, 2, lastFollowee);
         followeesQueryByFollowerHandle.addAll(results.getValues());
       }
       System.out.println("Followees Query By Follower Handle (" + queryFollowerHandle + ") Size: " + followeesQueryByFollowerHandle.size());
@@ -147,7 +147,7 @@ public class Main {
       String queryFolloweeHandle = testCases[randomUser].followee_handle;
       while (results2 == null || results2.hasLastKey()) {
         String lastFollower = ((results2 != null) ? results.getLastKey() : null);
-        results2 = followsDAO.queryIndex(testCases[randomUser].followee_handle, 10, lastFollower);
+        results2 = followsDAO.queryIndex(testCases[randomUser].followee_handle, 2, lastFollower);
         followersQueryByFolloweeHandle.addAll(results2.getValues());
       }
       System.out.println("Followers Query By Followee Handle (" + queryFolloweeHandle + ") Size: " + followersQueryByFolloweeHandle.size());
