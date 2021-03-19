@@ -171,8 +171,6 @@ public class FollowsDAO {
   }
 
 
-
-
   // Find followers of user given followee_handle
   // AWS Link to exampleQueryIndex
   public ResultsPage queryIndex(String followee_handle, int pageSize, String lastFollower) {
@@ -217,8 +215,6 @@ public class FollowsDAO {
 
     return result;
   }
-
-
 
   private static boolean isNonEmptyString(String value) {
     return (value != null && value.length() > 0);

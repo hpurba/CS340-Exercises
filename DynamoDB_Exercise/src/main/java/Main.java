@@ -154,8 +154,6 @@ public class Main {
       for(String aFollower : followersQueryByFolloweeHandle) {
         System.out.println(aFollower + " follows " + queryFolloweeHandle + ".");
       }
-
-
     }
     catch (Exception e) {
       e.printStackTrace();
