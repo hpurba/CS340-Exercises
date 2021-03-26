@@ -9,10 +9,19 @@ import java.util.TreeMap;
 
 public class SpellingChecker {
 
+    /**
+     * These are all interfaces which when set, will be concrete class by the @Inject constructor method.
+     */
     private final SourceFetcher sourceFetcher;
     private final Extractor extractor;
     private final DictionarySource dictionarySource;
 
+    /**
+     * This part injects the concrete classes into the respective interfaces.
+     * @param fetcher
+     * @param extractor
+     * @param dictionarySource
+     */
     @Inject
     SpellingChecker(SourceFetcher fetcher, Extractor extractor, DictionarySource dictionarySource) {
         this.sourceFetcher = fetcher;
@@ -20,10 +29,10 @@ public class SpellingChecker {
         this.dictionarySource = dictionarySource;
     }
 
-	public SortedMap<String, Integer> check(String uri) throws IOException {
+	public SortedMap<String, Integer> check() throws IOException {
 
 		// download the document content
-    String content = sourceFetcher.getContent(uri);
+    String content = sourceFetcher.getContent();
 
 		// extract words from the content
 		List<String> words = extractor.extract(content);

@@ -12,11 +12,9 @@ public class Main {
 	public static void main(String[] args) {
 	
 		try {
-			String url = "https://pastebin.com/raw/t6AZ5kx3";
-
 			Injector injector = Guice.createInjector(new GuiceModule());
 			SpellingChecker checker = injector.getInstance(SpellingChecker.class);
-			SortedMap<String, Integer> mistakes = checker.check(url);
+			SortedMap<String, Integer> mistakes = checker.check();
 			System.out.println(mistakes);
 		}
 		catch (IOException e) {

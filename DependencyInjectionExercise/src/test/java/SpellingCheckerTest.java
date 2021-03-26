@@ -24,7 +24,7 @@ class SpellingCheckerTest {
 
     Injector injector = Guice.createInjector(new GuiceModule());
     SpellingChecker checker = injector.getInstance(SpellingChecker.class);
-    SortedMap<String, Integer> mistakes = checker.check(url);
+    SortedMap<String, Integer> mistakes = checker.check();
     assertNotNull(mistakes);
     assertEquals(expected, mistakes);
   }
@@ -34,18 +34,12 @@ class SpellingCheckerTest {
     String url = "https://pastebin.com/raw/t6AZ5kx3";
 
     SortedMap<String, Integer> expected = new TreeMap<String, Integer>();
-    expected.put("be", 1);
-    expected.put("doesn", 1);
+    expected.put("Worldx", 1);
     expected.put("funtion", 1);
-    expected.put("t", 2);
 
-    Dictionary dictionary = Mockito.mock(Dictionary.class);
-    when(dictionary.isValidWord("funtion")).thenReturn(false);
-
-
-    Injector injector = Guice.createInjector(new GuiceModule());
+    Injector injector = Guice.createInjector(new TestModule());
     SpellingChecker checker = injector.getInstance(SpellingChecker.class);
-    SortedMap<String, Integer> mistakes = checker.check(url);
+    SortedMap<String, Integer> mistakes = checker.check();
     assertNotNull(mistakes);
     assertEquals(expected, mistakes);
   }

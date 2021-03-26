@@ -10,7 +10,7 @@ public class GuiceModule extends AbstractModule {
   protected void configure() {
     bind(DictionarySource.class).to(Dictionary.class);
     bind(Extractor.class).to(WordExtractor.class);
-    bind(SourceFetcher.class).to(URLDoucementSource.class);
+    bind(SourceFetcher.class).to(URLDocumentSource.class);
   }
 
   @Provides

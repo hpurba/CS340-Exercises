@@ -7,10 +7,16 @@ import java.net.URL;
 import java.net.URLConnection;
 
 
-public class URLDoucementSource implements SourceFetcher {
+public class URLDocumentSource implements SourceFetcher {
+
+  private String uri;
 
   @Inject
-  public String getContent(@Named("UrlToCheck") String uri) throws IOException {
+  public URLDocumentSource(@Named("UrlToCheck") String uri) {
+    this.uri = uri;
+  }
+
+  public String getContent() throws IOException {
 
     URL url=new URL(uri);
     URLConnection connection=url.openConnection();
