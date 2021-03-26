@@ -1,0 +1,28 @@
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+public class SpellingCheckerWithDepInjTest {
+
+  @Test
+  void dependencyMock() throws IOException {
+    String url = "https://pastebin.com/raw/t6AZ5kx3";
+
+    SortedMap<String, Integer> expected = new TreeMap<String, Integer>();
+    expected.put("Worldx", 1);
+    expected.put("funtion", 1);
+
+    Injector injector = Guice.createInjector(new TestModule());
+    SpellingChecker checker = injector.getInstance(SpellingChecker.class);
+    SortedMap<String, Integer> mistakes = checker.check();
+    assertNotNull(mistakes);
+    assertEquals(expected, mistakes);
+  }
+}

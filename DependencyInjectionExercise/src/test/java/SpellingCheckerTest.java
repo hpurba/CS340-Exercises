@@ -28,19 +28,4 @@ class SpellingCheckerTest {
     assertNotNull(mistakes);
     assertEquals(expected, mistakes);
   }
-
-  @Test
-  void dependencyMock() throws IOException {
-    String url = "https://pastebin.com/raw/t6AZ5kx3";
-
-    SortedMap<String, Integer> expected = new TreeMap<String, Integer>();
-    expected.put("Worldx", 1);
-    expected.put("funtion", 1);
-
-    Injector injector = Guice.createInjector(new TestModule());
-    SpellingChecker checker = injector.getInstance(SpellingChecker.class);
-    SortedMap<String, Integer> mistakes = checker.check();
-    assertNotNull(mistakes);
-    assertEquals(expected, mistakes);
-  }
 }
