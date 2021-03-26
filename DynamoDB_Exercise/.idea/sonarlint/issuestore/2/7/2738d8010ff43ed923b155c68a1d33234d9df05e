@@ -1,14 +1,14 @@
 
 t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ò‡ãËşÿÿÿÿ
-j
-java:S1192:"OUse already-defined constant 'IndexName' instead of duplicating its value here.(³òâŞıÿÿÿÿ
-h
-java:S1192,"RUse already-defined constant 'LocationAttr' instead of duplicating its value here.(»¥õü
-t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(äù÷»ùÿÿÿÿ
-j
-java:S1192L"OUse already-defined constant 'TableName' instead of duplicating its value here.(€Éş¾üÿÿÿÿ
 n	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(áÆÏ
-o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ß–¡
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(–üûÿÿÿÿ
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(äù÷»ùÿÿÿÿ
 l
 java:S1192)"QUse already-defined constant 'VisitorAttr' instead of duplicating its value here.( ’ÒÊÿÿÿÿÿ
-t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(–üûÿÿÿÿ
+h
+java:S1192,"RUse already-defined constant 'LocationAttr' instead of duplicating its value here.(»¥õü
+j
+java:S1192:"OUse already-defined constant 'IndexName' instead of duplicating its value here.(³òâŞıÿÿÿÿ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ß–¡
+j
+java:S1192L"OUse already-defined constant 'TableName' instead of duplicating its value here.(€Éş¾üÿÿÿÿ

@@ -1,0 +1,7 @@
+
+y
+java:S11572"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(÷“Ÿç
+~
+java:S11577"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ËÓî­ùÿÿÿÿ
+n	java:S116"YRename this field "_newBudgetView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«êçÔ
+l	java:S116"RRename this field "_budget" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ“Ô´ÿÿÿÿÿ

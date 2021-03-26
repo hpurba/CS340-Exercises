@@ -1,0 +1,40 @@
+
+}
+java:S3923?"[Remove this conditional structure or edit its code blocks so that they're not all the same.(©Æ®Žÿÿÿÿÿ8¸´ê¨‚/
+Y	java:S125’"<This block of commented-out lines of code should be removed.(¦˜‘å8Àñ©¦‚/
+]	java:S125Y"<This block of commented-out lines of code should be removed.(ûô„…þÿÿÿÿ8¨¨¦‚/
+f
+java:S3973J"IUse indentation to denote the code conditionally executed by this "else".(ÔÍØ8¸´ê¨‚/
+X	java:S125N"<This block of commented-out lines of code should be removed.(ÎÌÓ»8¸´ê¨‚/
+Y	java:S125€"<This block of commented-out lines of code should be removed.(¦˜‘å8÷ˆ©¦‚/
+Y	java:S125Œ"<This block of commented-out lines of code should be removed.(†«ÿ8ƒß©¦‚/
+I
+java:S1168Õ"+Return an empty collection instead of null.(¥¹ï8Š´•¦‚/
+x
+java:S3923/"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Ê¯ 8¸´ê¨‚/
+X	java:S125@"<This block of commented-out lines of code should be removed.(Ù²‡à8ÿÆé¨‚/
+s	java:S116"RRename this field "_budget" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Òöøÿÿÿÿ8±ý¡¦‚/
+X	java:S125C"<This block of commented-out lines of code should be removed.(¾èŒ 8¸´ê¨‚/
+X	java:S125_"<This block of commented-out lines of code should be removed.(®ÿ¦Ö8¨¨¦‚/
+]	java:S1250"<This block of commented-out lines of code should be removed.(ùú”‰ýÿÿÿÿ8¸´ê¨‚/
+€
+java:S1157s"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(÷“Ÿç8±ý¡¦‚/
+]	java:S1252"<This block of commented-out lines of code should be removed.(çÅ³–ùÿÿÿÿ8¸´ê¨‚/
+X	java:S125}"<This block of commented-out lines of code should be removed.(†«ÿ8÷ˆ©¦‚/
+X
+java:S1128"6Remove this unused import 'view.expense.IExpenseView'.(‹´þáÿÿÿÿÿ8›°å¨‚/
+X	java:S125H"<This block of commented-out lines of code should be removed.(È¼–Å8¸´ê¨‚/
+X	java:S1254"<This block of commented-out lines of code should be removed.(¦˜‘å8¸´ê¨‚/
+]	java:S125K"<This block of commented-out lines of code should be removed.(¬¡ˆ¯üÿÿÿÿ8¸´ê¨‚/
+Y	java:S125œ"<This block of commented-out lines of code should be removed.(¦˜‘å8¢¿ª¦‚/
+w	java:S116"[Rename this field "_editableExpense" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸‚Œ 8Š´•¦‚/
+]	java:S125<"<This block of commented-out lines of code should be removed.(’×ÒÒúÿÿÿÿ8ßÞé¨‚/
+Y	java:S125£"<This block of commented-out lines of code should be removed.(¦˜‘å8¢¿ª¦‚/
+X	java:S125Q"<This block of commented-out lines of code should be removed.(¦˜‘å8¸´ê¨‚/
+s	java:S116"WRename this field "_allExpenses" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×™×Š8Š´•¦‚/
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Ìùáùÿÿÿÿ8‘ÑÔ¦‚/
+]	java:S125"<This block of commented-out lines of code should be removed.( »¹ÿÿÿÿÿ8–¤ò¨‚/
+]	java:S125n"<This block of commented-out lines of code should be removed.(ûô„…þÿÿÿÿ8¬Æ¨¦‚/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¶ßï¦
+m	java:S128F"LEnd this switch case with an unconditional break, return or throw statement.(ìÔÝçúÿÿÿÿ8¸´ê¨‚/
+]	java:S125e"<This block of commented-out lines of code should be removed.(î€Ñ„úÿÿÿÿ8¨¨¦‚/

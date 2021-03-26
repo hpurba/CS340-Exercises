@@ -1,0 +1,22 @@
+
+{
+java:S1192"^Define a constant instead of duplicating this literal "id text not null primary key," 3 times.(¦§Üâ8«Ö†¦‚/
+c
+java:S11267"AReplace this if-then-else statement by a single return statement.(Ú¬Æûÿÿÿÿ8¡ÈŠ¦‚/
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Í×íÏüÿÿÿÿ8«Ö†¦‚/
+
+java:S1186C"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ—²µ8„£€§‚/
+
+java:S1186H"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°«‘ß8„£€§‚/
+
+java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷‡Çü8„£€§‚/
+£
+java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(·ç´ùÿÿÿÿ8„£€§‚/
+£
+java:S1186R"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†¶€ÿúÿÿÿÿ8„£€§‚/
+£
+java:S1186g"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–Ê‘‰øÿÿÿÿ8‹¹Ğ¨‚/
+
+java:S1186{"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Øøï¹8áŸî¨‚/
+I
+java:S1168"+Return an empty collection instead of null.(¥¹ï8‘ƒ©‚/

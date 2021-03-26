@@ -1,11 +1,9 @@
 
 w
 java:S1128"URemove this unused import 'com.amazonaws.services.dynamodbv2.document.utils.NameMap'.(έ©ψÿÿÿÿ8Ξ‹ωƒ/
-s	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΐφτϊÿÿÿÿ8Γ‘΅·„/
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬ΡµΚωÿÿÿÿ8ι™έσƒ/
 {	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™„ϊΧωÿÿÿÿ8ίλυƒ/
 {	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ήψήωÿÿÿÿ8©ι—υƒ/
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ητ®©8ι™έσƒ/
 {	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ο£Ηύÿÿÿÿ8Τΰ•υƒ/
-?
-java:S1116Β"Remove this empty statement.(ΙΡρ§ÿÿÿÿÿ8αζ¤Έ„/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬ΡµΚωÿÿÿÿ8ι™έσƒ/
+s	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΐφτϊÿÿÿÿ8Γ‘΅·„/
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ητ®©8ι™έσƒ/

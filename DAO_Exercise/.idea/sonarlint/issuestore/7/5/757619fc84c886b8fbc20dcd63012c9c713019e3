@@ -1,0 +1,34 @@
+
+X	java:S125z"<This block of commented-out lines of code should be removed.( Ÿ¹ 8ÁÒš§‚/
+Y	java:S125¶"<This block of commented-out lines of code should be removed.(şË¥8åàÿ§‚/
+]	java:S125j"<This block of commented-out lines of code should be removed.(Œãªóùÿÿÿÿ8ø´–§‚/
+R
+java:S1144"5Remove this unused private "isValidSelection" method.(›¬”g8Ö ‚©‚/
+l	java:S116"WRename this field "_expenseView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Äñ£
+L
+java:S1481"/Remove this unused "daoFactory" local variable.(—İ²8Ñ¢‰§‚/
+^	java:S125æ"<This block of commented-out lines of code should be removed.(ƒÉÆ³ÿÿÿÿÿ8ÆÔÕ¨‚/
+s	java:S116"RRename this field "_budget" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ“Ô´ÿÿÿÿÿ8ªËä¨‚/
+O
+java:S1144ä"2Remove this unused private "createExpense" method.(­±Œ8Ö ‚©‚/
+^	java:S125"<This block of commented-out lines of code should be removed.(×ß©øÿÿÿÿ8®„£§‚/
+^	java:S125¡"<This block of commented-out lines of code should be removed.(ƒÉÆ³ÿÿÿÿÿ8÷…Š¨‚/
+X	java:S125\"<This block of commented-out lines of code should be removed.(á¥«ê8šû”§‚/
+e
+java:S1128"HRemove this unused import 'dataaccess.sqlite.databaseInitializationDAO'.(ÜÅ Ó8¿Éˆ§‚/
+^	java:S125 "<This block of commented-out lines of code should be removed.(ªçøúÿÿÿÿ8è±§‚/
+U
+java:S1144"2Remove this unused private "deleteExpense" method.(ÏÉ†Ìúÿÿÿÿ8Ö ‚©‚/
+U
+java:S1144ÿ"2Remove this unused private "updateExpense" method.(Úé†ùüÿÿÿÿ8Ö ‚©‚/
+^	java:S125¾"<This block of commented-out lines of code should be removed.(ƒÉÆ³ÿÿÿÿÿ8ÇÂŠ©‚/
+]	java:S125q"<This block of commented-out lines of code should be removed.(×ß©øÿÿÿÿ8ñÜ—§‚/
+^	java:S125"<This block of commented-out lines of code should be removed.(ƒÉÆ³ÿÿÿÿÿ8Ñ¥Š¨‚/
+S
+java:S1144³"0Remove this unused private "setExpenses" method.(¯Ñµ÷ıÿÿÿÿ8Ö ‚©‚/
+]	java:S1250"<This block of commented-out lines of code should be removed.(Ì“Éúÿÿÿÿ8§è¨‚/
+X	java:S125'"<This block of commented-out lines of code should be removed.(Ï“8ÅÀ§‚/
+M
+java:S1068"+Remove this unused "_budget" private field.(ñ“Ô´ÿÿÿÿÿ8§è¨‚/
+]	java:S125c"<This block of commented-out lines of code should be removed.(©›ÿøÿÿÿÿ8œß•§‚/
+]	java:S125"<This block of commented-out lines of code should be removed.(ÃÑîÓşÿÿÿÿ8ªËä¨‚/

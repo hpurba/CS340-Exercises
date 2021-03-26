@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="248e07cb-4633-45fd-bbf1-5175895f9323" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/BudgetDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/IDAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/IDatabaseInitializatoinDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/IExpenseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/sqlite/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/sqlite/databaseInitializationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataaccess/sqlite/expenseDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/budget.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presenter/expense/ExpensePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/expense/ExpensePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/presenter/expense/ExpensePresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/expense/ExpensePresenter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,22 +85,22 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="980" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615525374372" />
-    <state width="2518" height="408" key="GridCell.Tab.0.bottom" timestamp="1615530349858">
+    <state width="2518" height="172" key="GridCell.Tab.0.bottom" timestamp="1615531360630">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615530349858" />
-    <state width="2518" height="408" key="GridCell.Tab.0.center" timestamp="1615530349857">
+    <state width="2518" height="172" key="GridCell.Tab.0.bottom/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615531360630" />
+    <state width="2518" height="172" key="GridCell.Tab.0.center" timestamp="1615531360629">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615530349857" />
-    <state width="2518" height="408" key="GridCell.Tab.0.left" timestamp="1615530349856">
+    <state width="2518" height="172" key="GridCell.Tab.0.center/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615531360629" />
+    <state width="2518" height="172" key="GridCell.Tab.0.left" timestamp="1615531360628">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615530349856" />
-    <state width="2518" height="408" key="GridCell.Tab.0.right" timestamp="1615530349857">
+    <state width="2518" height="172" key="GridCell.Tab.0.left/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615531360628" />
+    <state width="2518" height="172" key="GridCell.Tab.0.right" timestamp="1615531360629">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615530349857" />
+    <state width="2518" height="172" key="GridCell.Tab.0.right/0.23.2560.1417/-3840.23.1920.1057/-1920.23.1920.1057@0.23.2560.1417" timestamp="1615531360629" />
     <state x="937" y="355" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1615530046347">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
