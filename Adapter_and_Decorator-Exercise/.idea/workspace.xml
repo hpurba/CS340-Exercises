@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="088cd075-72e4-452a-b227-fc03a0f80996" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Adapter-Exercise/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Adapter-Exercise/src/main/java/Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Adapter-Exercise/src/main/java/Main_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/src/main/java/ComplexStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/src/main/java/CoolnessStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/src/main/java/Main_Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/src/main/java/PlainString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/src/main/java/StringDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Decorator-Exercise/src/main/java/StringSource.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qVTrplhd9U4wF6HOPVZWIWzShm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.31034482" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="088cd075-72e4-452a-b227-fc03a0f80996" name="Default Changelist" comment="" />
+      <created>1617163958234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617163958234</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1221" y="691" key="com.intellij.ide.util.TipDialog" timestamp="1617163969912">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1221" y="691" key="com.intellij.ide.util.TipDialog/0.23.2560.1417/-1920.23.1920.1057/-3840.23.1920.1057@-1920.23.1920.1057" timestamp="1617163969912" />
+    <state x="-1531" y="253" key="new project wizard" timestamp="1617164986623">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1531" y="253" key="new project wizard/0.23.2560.1417/-1920.23.1920.1057/-3840.23.1920.1057@-1920.23.1920.1057" timestamp="1617164986623" />
+  </component>
+</project>
