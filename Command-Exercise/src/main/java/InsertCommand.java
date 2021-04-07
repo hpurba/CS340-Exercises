@@ -20,17 +20,19 @@ public class InsertCommand implements Command {
         this.sequenceInputLen = sequenceInput.length();
     }
 
-    // Recieves a command object
+    // Receives a command object
+    @Override
     public void execute() {
         _document.insert(insertionIndex, sequenceInput);
     }
 
+    @Override
     public void undo() {
         _document.delete(insertionIndex, sequenceInputLen);
     }
 
     @Override
     public void redo() {
-        _document.insert(insertionIndex, sequenceInput);
+        execute();
     }
 }

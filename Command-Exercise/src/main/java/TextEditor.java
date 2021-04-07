@@ -39,7 +39,8 @@ class TextEditor {
                         open();
                         break;
                     case 7:
-                        _document.clear();
+                        startNewEmptyDoc();
+//                        _document.clear();
                         break;
                     case 8:
                         undo();
@@ -102,9 +103,12 @@ class TextEditor {
             String deletionDistanceInput = scanner.next();
             int deletionDistance = validateNumberInput(deletionDistanceInput);
             if (deletionDistance != -1) {
-                if (_document.delete(deletionIndex, deletionDistance) == null) {
-                    System.out.println("Deletion unsuccessful");
-                }
+
+                DeleteCommand deleteCommand = new DeleteCommand(_document, deletionIndex, deletionDistance);
+                undoRedoManager.execute(deleteCommand);
+//                if (_document.delete(deletionIndex, deletionDistance) == null) {
+//                    System.out.println("Deletion unsuccessful");
+//                }
             }
         }
     }
@@ -122,8 +126,11 @@ class TextEditor {
             if (replaceDistance != -1) {
                 System.out.print("Replacement string: ");
                 String replacementString = scanner.next();
-                _document.delete(replaceIndex, replaceDistance);
-                _document.insert(replaceIndex, replacementString);
+
+                ReplaceCommand replaceCommand = new ReplaceCommand(_document, replaceIndex, replaceDistance, replacementString);
+                undoRedoManager.execute(replaceCommand);
+//                _document.delete(replaceIndex, replaceDistance);
+//                _document.insert(replaceIndex, replacementString);
             }
         }
     }
@@ -141,7 +148,10 @@ class TextEditor {
 
         System.out.print("Name of file to open: ");
         String openFileName = scanner.next();
-        _document.open(openFileName);
+
+        OpenCommand openCommand = new OpenCommand(_document, openFileName);
+        undoRedoManager.execute(openCommand);
+//        _document.open(openFileName);
     }
 
     private int validateNumberInput(String input) {
@@ -153,6 +163,12 @@ class TextEditor {
         }
 
         return selection;
+    }
+
+    private void startNewEmptyDoc() {
+        StartCommand startCommand = new StartCommand(_document);
+        undoRedoManager.execute(startCommand);
+//        _document.clear();
     }
 
     private void undo() {
