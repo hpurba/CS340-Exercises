@@ -2,7 +2,7 @@ public class StartCommand implements Command {
 
   // Document being cleared
   IDocument _document;
-  ISequence _sequence;
+  String _sequence;
 
   public StartCommand(IDocument _document) {
     this._document = _document;
@@ -10,13 +10,14 @@ public class StartCommand implements Command {
 
   @Override
   public void execute() {
-    _sequence = _document.sequence();
+    _sequence = _document.sequence().toString();
     _document.clear();
   }
 
   @Override
   public void undo() {
-    _document.insert(0, _sequence.toString());
+    _document.clear();
+    _document.insert(0, _sequence);
   }
 
   @Override
